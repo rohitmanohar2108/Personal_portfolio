@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import About from './About';
+import Resume from './Resume';
+import Portfolio from './Portfolio';
+import Blog from './Blog';
+import Contact from './Contact';
 
 const Home = () => {
+  // State to track the current section, defaulting to 'About'
+  const [currentSection, setCurrentSection] = useState('About');
+
+  // Function to handle section change
+  const handleSectionChange = (section) => {
+    setCurrentSection(section);
+  };
+
+  const renderContent = () => {
+    switch (currentSection) {
+      case 'About':
+        return <About />;
+      case 'Resume':
+        return <Resume />;
+      case 'Portfolio':
+        return <Portfolio />;
+      case 'Blog':
+        return <Blog />;
+      case 'Contact':
+        return <Contact />;
+      default:
+        return <p className="text-gray-300">Welcome to My Portfolio</p>;
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-900 flex p-6">
       {/* Left Column */}
@@ -19,36 +49,79 @@ const Home = () => {
         </div>
 
         {/* Horizontal Line */}
-        <hr className="w-44  border-gray-600 mb-4" />
+        <hr className="w-44 border-gray-600 mb-4" />
 
         {/* Icons and Contact Details */}
         <div className="bg-gray-700 p-4 rounded-lg w-full">
           {/* Email */}
-          <div className="flex items-center mb-4">
-            <FaEnvelope className="text-white mr-2" size={20} />
-            
-            <p className="text-white">rohit@example.com</p>
+          <div className="mb-4">
+            <p className="text-gray-400 mb-1">Email</p>
+            <div className="flex items-center">
+              <FaEnvelope className="text-white mr-2" size={20} />
+              <p className="text-white">rohit@example.com</p>
+            </div>
           </div>
 
           {/* Phone */}
-          <div className="flex items-center mb-4">
-            <FaPhone className="text-white mr-2" size={20} />
-            <p className="text-white">+123 456 7890</p>
+          <div className="mb-4">
+            <p className="text-gray-400 mb-1">Phone</p>
+            <div className="flex items-center">
+              <FaPhone className="text-white mr-2" size={20} />
+              <p className="text-white">+123 456 7890</p>
+            </div>
           </div>
 
           {/* Location */}
-          <div className="flex items-center">
-            <FaMapMarkerAlt className="text-white mr-2" size={20} />
-            <p className="text-white">Surathkal, India</p>
+          <div>
+            <p className="text-gray-400 mb-1">Location</p>
+            <div className="flex items-center">
+              <FaMapMarkerAlt className="text-white mr-2" size={20} />
+              <p className="text-white">Surathkal, India</p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Right Column */}
-      <div className="w-3/4 bg-gray-700 p-6 ml-6 rounded-lg">
-        {/* Add your right side content here */}
-        <h1 className="text-white text-3xl">Welcome to My Portfolio</h1>
-        <p className="text-gray-300 mt-4">This is where you can add more content, such as a brief introduction or any other details you want to showcase.</p>
+      <div className="w-3/4 bg-gray-700 p-6 ml-6 rounded-lg relative">
+        {/* Top-right Navigation */}
+        <div className="absolute top-0 right-0 mt-4 mr-4">
+          <nav className="flex space-x-4">
+            <button
+              onClick={() => handleSectionChange('About')}
+              className={`text-gray-300 hover:text-white ${currentSection === 'About' ? 'underline' : ''}`}
+            >
+              About
+            </button>
+            <button
+              onClick={() => handleSectionChange('Resume')}
+              className={`text-gray-300 hover:text-white ${currentSection === 'Resume' ? 'underline' : ''}`}
+            >
+              Resume
+            </button>
+            <button
+              onClick={() => handleSectionChange('Portfolio')}
+              className={`text-gray-300 hover:text-white ${currentSection === 'Portfolio' ? 'underline' : ''}`}
+            >
+              Portfolio
+            </button>
+            <button
+              onClick={() => handleSectionChange('Blog')}
+              className={`text-gray-300 hover:text-white ${currentSection === 'Blog' ? 'underline' : ''}`}
+            >
+              Blog
+            </button>
+            <button
+              onClick={() => handleSectionChange('Contact')}
+              className={`text-gray-300 hover:text-white ${currentSection === 'Contact' ? 'underline' : ''}`}
+            >
+              Contact
+            </button>
+          </nav>
+        </div>
+
+        {/* Right Column Content */}
+        {renderContent()}
       </div>
     </div>
   );
