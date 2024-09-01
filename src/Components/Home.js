@@ -86,38 +86,38 @@ const Home = () => {
       <div className="w-3/4 bg-gray-700 p-6 ml-6 rounded-lg relative">
         {/* Top-right Navigation */}
         <div className="absolute top-0 right-0 mt-4 mr-4">
-          <nav className="flex space-x-4">
+          <div className="flex space-x-4">
             <button
               onClick={() => handleSectionChange('About')}
-              className={`text-gray-300 hover:text-white ${currentSection === 'About' ? 'underline' : ''}`}
+              className={`p-2 rounded-full  bg-gray-800  hover:bg-teal-950 ${currentSection === 'About' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               About
             </button>
             <button
               onClick={() => handleSectionChange('Resume')}
-              className={`text-gray-300 hover:text-white ${currentSection === 'Resume' ? 'underline' : ''}`}
+              className={`p-2 rounded-full  bg-gray-800 hover:bg-teal-950 ${currentSection === 'Resume' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               Resume
             </button>
             <button
               onClick={() => handleSectionChange('Portfolio')}
-              className={`text-gray-300 hover:text-white ${currentSection === 'Portfolio' ? 'underline' : ''}`}
+              className={`p-2 rounded-full  bg-gray-800 hover:bg-teal-950  ${currentSection === 'Portfolio' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               Portfolio
             </button>
             <button
               onClick={() => handleSectionChange('Blog')}
-              className={`text-gray-300 hover:text-white ${currentSection === 'Blog' ? 'underline' : ''}`}
+              className={`p-2 rounded-full  bg-gray-800 hover:bg-teal-950 ${currentSection === 'Blog' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               Blog
             </button>
             <button
               onClick={() => handleSectionChange('Contact')}
-              className={`text-gray-300 hover:text-white ${currentSection === 'Contact' ? 'underline' : ''}`}
+              className={`p-2 rounded-full bg-gray-800 hover:bg-teal-950 ${currentSection === 'Contact' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               Contact
             </button>
-          </nav>
+          </div>
         </div>
 
         {/* Right Column Content */}
