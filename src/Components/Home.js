@@ -89,31 +89,31 @@ const Home = () => {
           <div className="flex space-x-4">
             <button
               onClick={() => handleSectionChange('About')}
-              className={`p-2 rounded-full  bg-gray-800  hover:bg-teal-950 ${currentSection === 'About' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
+              className={`px-4 py-2 rounded-full  bg-gray-800  hover:bg-teal-950 ${currentSection === 'About' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               About
             </button>
             <button
               onClick={() => handleSectionChange('Resume')}
-              className={`p-2 rounded-full  bg-gray-800 hover:bg-teal-950 ${currentSection === 'Resume' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
+              className={`px-4 py-2 rounded-full  bg-gray-800 hover:bg-teal-950 ${currentSection === 'Resume' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               Resume
             </button>
             <button
               onClick={() => handleSectionChange('Portfolio')}
-              className={`p-2 rounded-full  bg-gray-800 hover:bg-teal-950  ${currentSection === 'Portfolio' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
+              className={`px-4 py-2 rounded-full  bg-gray-800 hover:bg-teal-950  ${currentSection === 'Portfolio' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               Portfolio
             </button>
             <button
               onClick={() => handleSectionChange('Blog')}
-              className={`p-2 rounded-full  bg-gray-800 hover:bg-teal-950 ${currentSection === 'Blog' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
+              className={`px-4 py-2 rounded-full  bg-gray-800 hover:bg-teal-950 ${currentSection === 'Blog' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               Blog
             </button>
             <button
               onClick={() => handleSectionChange('Contact')}
-              className={`p-2 rounded-full bg-gray-800 hover:bg-teal-950 ${currentSection === 'Contact' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
+              className={`px-4 py-2 rounded-full bg-gray-800 hover:bg-teal-950 ${currentSection === 'Contact' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500`}
             >
               Contact
             </button>
