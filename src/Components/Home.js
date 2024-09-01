@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-900 flex p-6">
       {/* Left Column */}
-      <div className="w-1/4 bg-gray-800 p-6 rounded-lg flex flex-col items-center">
+      <div className="w-1/4 bg-gray-700 p-6 rounded-lg flex flex-col items-center">
         {/* Profile Photo */}
         <img
           src="https://media-sin6-3.cdn.whatsapp.net/v/t61.24694-24/453603651_520834290411384_6429731950094255849_n.jpg?ccb=11-4&oh=01_Q5AaIEGfLjFtBOFfDF1YPFoYWR-OdQzMAMTPXB2Sta2rfey_&oe=66E120FF&_nc_sid=5e03e0&_nc_cat=102" // Replace with your actual profile photo URL
@@ -44,15 +44,15 @@ const Home = () => {
         />
         
         <h2 className="text-white text-2xl mb-2">Rohit Manohar</h2>
-        <div className="bg-gray-700 text-white px-4 py-2 rounded-lg mb-4">
+        <div className="bg-gray-800 text-white px-4 py-2 rounded-lg mb-4 hover:text-green-500 hover:bg-teal-950">
           Software Engineer
         </div>
 
         {/* Horizontal Line */}
-        <hr className="w-44 border-gray-600 mb-4" />
+        <hr className="w-44 border-gray-300 mb-4" />
 
         {/* Icons and Contact Details */}
-        <div className="bg-gray-700 p-4 rounded-lg w-full">
+        <div className="bg-gray-800 p-4 rounded-lg w-full">
           {/* Email */}
           <div className="mb-4">
             <p className="text-gray-400 mb-1">Email</p>
