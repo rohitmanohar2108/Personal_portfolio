@@ -10,22 +10,31 @@ const Home = () => {
         <img
           src="https://media-sin6-3.cdn.whatsapp.net/v/t61.24694-24/453603651_520834290411384_6429731950094255849_n.jpg?ccb=11-4&oh=01_Q5AaIEGfLjFtBOFfDF1YPFoYWR-OdQzMAMTPXB2Sta2rfey_&oe=66E120FF&_nc_sid=5e03e0&_nc_cat=102" // Replace with your actual profile photo URL
           alt="Profile"
-          className="w-52 h-52 object-cover mb-4 rounded-lg"
+          className="w-60 h-60 object-cover mb-4 rounded-lg"
         />
-        {/* Contact Details */}
-        <div className="text-white text-center">
-          <p className="mb-2 flex items-center justify-center">
-            <FaEnvelope className="mr-2" /> 
-            rohit@example.com
-          </p>
-          <p className="mb-2 flex items-center justify-center">
-            <FaPhone className="mr-2" />
-            +123 456 7890
-          </p>
-          <p className="mb-2 flex items-center justify-center">
-            <FaMapMarkerAlt className="mr-2" />
-            Surathkal, India
-          </p>
+        
+        {/* Horizontal Line */}
+        <hr className="w-44  border-gray-600 mb-4" />
+
+        {/* Icons and Contact Details */}
+        <div className="bg-gray-700 p-4 rounded-lg w-full">
+          {/* Email */}
+          <div className="flex items-center mb-4">
+            <FaEnvelope className="text-white mr-2" size={20} />
+            <p className="text-white">rohit@example.com</p>
+          </div>
+
+          {/* Phone */}
+          <div className="flex items-center mb-4">
+            <FaPhone className="text-white mr-2" size={20} />
+            <p className="text-white">+123 456 7890</p>
+          </div>
+
+          {/* Location */}
+          <div className="flex items-center">
+            <FaMapMarkerAlt className="text-white mr-2" size={20} />
+            <p className="text-white">Surathkal, India</p>
+          </div>
         </div>
       </div>
 
@@ -40,4 +49,3 @@ const Home = () => {
 };
 
 export default Home;
-
