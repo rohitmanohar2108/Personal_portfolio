@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCode, FaPaintBrush, FaCogs, FaLaptopCode } from 'react-icons/fa'; // Import the icons you need
 
 const About = () => {
   return (
@@ -23,9 +24,50 @@ const About = () => {
         excited to engage with like-minded individuals and contribute to the
         tech community.
       </p>
-      <h2 className="text-white text-3xl mt-4 font-nano">What i'm Doing</h2>
+
+      <h2 className="text-white text-3xl mt-4 font-nano">What I'm Doing</h2>
+
+      {/* Skill Boxes Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        {/* Box 1: Web Design */}
+        <div className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center">
+          <FaPaintBrush className="text-green-500 text-5xl mb-3" />
+          <h3 className="text-white text-2xl font-nano mb-2">Web Design</h3>
+          <p className="text-gray-400 text-base">
+            Creating visually appealing designs and user interfaces for websites. Expertise in UI/UX principles, responsive design, and modern design tools.
+          </p>
+        </div>
+
+        {/* Box 2: Web Development */}
+        <div className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center">
+          <FaLaptopCode className="text-green-500 text-5xl mb-3" />
+          <h3 className="text-white text-2xl font-nano mb-2">Web Development</h3>
+          <p className="text-gray-400 text-base">
+            Building and maintaining websites using various technologies such as HTML, CSS, JavaScript, and frameworks like React. Focus on performance and scalability.
+          </p>
+        </div>
+
+        {/* Box 3: Software Development */}
+        <div className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center">
+          <FaCode className="text-green-500 text-5xl mb-3" />
+          <h3 className="text-white text-2xl font-nano mb-2">Software Development</h3>
+          <p className="text-gray-400 text-base">
+            Developing software solutions with a focus on algorithms, data structures, and code optimization. Proficient in languages like Java and C++.
+          </p>
+        </div>
+
+        {/* Box 4: Front-End */}
+        <div className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center">
+          <FaCogs className="text-green-500 text-5xl mb-3" />
+          <h3 className="text-white text-2xl font-nano mb-2">Front-End</h3>
+          <p className="text-gray-400 text-base">
+            Specializing in creating interactive and dynamic user interfaces. Experienced with frameworks such as React, ensuring a smooth and engaging user experience.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default About;
+
