@@ -43,8 +43,8 @@ const Home = () => {
           className="w-60 h-60 object-cover mb-4 rounded-lg"
         />
         
-        <h2 className="text-white text-2xl mb-2">Rohit Manohar</h2>
-        <div className="bg-gray-800 text-white px-4 py-2 rounded-lg mb-4 hover:text-green-500 hover:bg-teal-950">
+        <h2 className="text-white text-2xl mb-2 font-nano">Rohit Manohar</h2>
+        <div className="bg-gray-800 text-white px-4 py-2 rounded-lg mb-4 hover:text-green-500 hover:bg-teal-950 font-nano">
           Software Engineer
         </div>
 
@@ -55,28 +55,28 @@ const Home = () => {
         <div className="bg-gray-800 p-4 rounded-lg w-full">
           {/* Email */}
           <div className="mb-4">
-            <p className="text-gray-400 mb-1">Email</p>
+            <p className="text-gray-400 mb-1 font-nano">Email</p>
             <div className="flex items-center">
-              <FaEnvelope className="text-white mr-2" size={20} />
-              <p className="text-white">rohit@example.com</p>
+              <FaEnvelope className=" mr-2 text-green-500" size={20} />
+              <p className="text-white font-nano">rohit@example.com</p>
             </div>
           </div>
 
           {/* Phone */}
           <div className="mb-4">
-            <p className="text-gray-400 mb-1">Phone</p>
+            <p className="text-gray-400 mb-1 font-nano">Phone</p>
             <div className="flex items-center">
-              <FaPhone className="text-white mr-2" size={20} />
-              <p className="text-white">+123 456 7890</p>
+              <FaPhone className="text-green-500 mr-2" size={20} />
+              <p className="text-white ">+123 456 7890</p>
             </div>
           </div>
 
           {/* Location */}
           <div>
-            <p className="text-gray-400 mb-1">Location</p>
+            <p className="text-gray-400 mb-1 font-nano">Location</p>
             <div className="flex items-center">
-              <FaMapMarkerAlt className="text-white mr-2" size={20} />
-              <p className="text-white">Surathkal, India</p>
+              <FaMapMarkerAlt className="text-green-500 mr-2" size={20} />
+              <p className="text-white font-nano">Surathkal, India</p>
             </div>
           </div>
         </div>
