@@ -14,7 +14,7 @@ const Blog = () => {
         </p>
 
         {/* Featured Post */}
-        <div className="bg-black  p-6 rounded-lg shadow-md mb-8 font-courier-prime">
+        <div className="bg-black/30  p-6 rounded-lg shadow-md mb-8 font-courier-prime">
           <h2 className="text-2xl text-white  mb-2">Featured Post</h2>
           <p className="text-gray-400 mb-4text-sm">
             Discover the latest trends in web development and how to stay ahead of the curve. From new frameworks to best practices, this post covers it all.
@@ -25,7 +25,7 @@ const Blog = () => {
         {/* Recent Posts */}
         <div className="mb-8 font-courier-prime">
           <h2 className="text-2xl text-white  mb-4">Recent Posts</h2>
-          <div className="bg-black  p-6 rounded-lg shadow-md mb-4">
+          <div className="bg-black/30 p-6 rounded-lg shadow-md mb-4">
             <h3 className="text-xl text-gray-100  mb-2">How to Master React in 2024</h3>
             <p className="text-gray-400 mb-2 text-sm">
               An in-depth guide on mastering React in the current year. Learn about new features and best practices.
@@ -33,7 +33,7 @@ const Blog = () => {
             <a href="#" className="text-amber-500 hover:underline text-sm">Read More</a>
           </div>
 
-          <div className="bg-black  p-6 rounded-lg shadow-md">
+          <div className="bg-black/30  p-6 rounded-lg shadow-md">
             <h3 className="text-xl text-gray-100  mb-2">Top 10 JavaScript Tips for Beginners</h3>
             <p className="text-gray-400 mb-2 text-sm">
               A collection of essential tips for beginners learning JavaScript. Improve your coding skills with these useful tips.
@@ -44,7 +44,7 @@ const Blog = () => {
       </div>
 
       {/* Sidebar */}
-      <div className="w-full md:w-1/4 p-6 bg-black  rounded-lg shadow-md md:ml-6 mt-20 font-courier-prime">
+      <div className="w-full md:w-1/4 p-6 bg-black/30  rounded-lg shadow-md md:ml-6 mt-20 font-courier-prime">
         <h2 className="text-2xl text-white  mb-4">Categories</h2>
         <ul className="text-gray-300">
           <li className="mb-2">
