@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         'nano': ['"Nano Sans"', 'sans-serif'],
         'courier-prime': ['Courier Prime', 'monospace'],
+        
       },
     },
   },

@@ -5,6 +5,7 @@ import { FcAbout } from "react-icons/fc";
 import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
 
+
 const About = () => {
   useEffect(() => {
     // Animate the header and paragraphs
@@ -32,6 +33,7 @@ const About = () => {
       </div>
 
       <hr className="w-32 border-2 border-yellow-600 mb-6 mt-3 rounded-full about-header" />
+      
 
       <p className="text-white text-sm font-courier-prime">
         I am a Computer Science Student at NITK. I have a deep passion for
@@ -61,7 +63,10 @@ const About = () => {
         <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
-            style={{ backgroundImage: "url('https://www.exovia.de/wp-content/uploads/2021/04/was-ist-webdesign-einfuehrung.jpg')" }}
+            style={{
+              backgroundImage:
+                "url('https://www.exovia.de/wp-content/uploads/2021/04/was-ist-webdesign-einfuehrung.jpg')",
+            }}
           ></div>
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -79,15 +84,18 @@ const About = () => {
         <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
-            style={{ backgroundImage: "url('https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg')" }}
+            style={{
+              backgroundImage:
+                "url('https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg')",
+            }}
           ></div>
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaLaptopCode className="text-amber-500 text-5xl mb-3" />
             <h3 className="text-white text-2xl mb-2">Web Development</h3>
             <p className="text-white text-sm">
-              Building and maintaining websites using various technologies such as
-              HTML, CSS, JavaScript, and frameworks like React. Focus on
+              Building and maintaining websites using various technologies such
+              as HTML, CSS, JavaScript, and frameworks like React. Focus on
               performance and scalability.
             </p>
           </div>
@@ -97,7 +105,10 @@ const About = () => {
         <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
-            style={{ backgroundImage: "url('https://okcredit-blog-images-prod.storage.googleapis.com/2021/03/Software-Development-Business1--1-.jpg')" }}
+            style={{
+              backgroundImage:
+                "url('https://okcredit-blog-images-prod.storage.googleapis.com/2021/03/Software-Development-Business1--1-.jpg')",
+            }}
           ></div>
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
@@ -105,8 +116,8 @@ const About = () => {
             <h3 className="text-white text-2xl mb-2">Software Development</h3>
             <p className="text-white text-sm">
               Developing software solutions with a focus on algorithms, data
-              structures, and code optimization. Proficient in languages like Java
-              and C++.
+              structures, and code optimization. Proficient in languages like
+              Java and C++.
             </p>
           </div>
         </div>
@@ -115,7 +126,10 @@ const About = () => {
         <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
-            style={{ backgroundImage: "url('https://media.licdn.com/dms/image/D5612AQFfhTEictqBHA/article-cover_image-shrink_720_1280/0/1716965604025?e=2147483647&v=beta&t=QQbiRZaZNurRKVw6bW1J0hG5x2f-7PMAowmfdFF3Dz4')" }}
+            style={{
+              backgroundImage:
+                "url('https://media.licdn.com/dms/image/D5612AQFfhTEictqBHA/article-cover_image-shrink_720_1280/0/1716965604025?e=2147483647&v=beta&t=QQbiRZaZNurRKVw6bW1J0hG5x2f-7PMAowmfdFF3Dz4')",
+            }}
           ></div>
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -163,25 +177,21 @@ const About = () => {
         <CertificationBox
           logo="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
           title="C++ Programming"
-        
           link="https://example.com/link-to-certification-1"
         />
         <CertificationBox
           logo="https://media.licdn.com/dms/image/v2/D560BAQE8MivsmbT7Ig/company-logo_100_100/company-logo_100_100/0/1705561459405/hackerrank_logo?e=1732147200&v=beta&t=3VXpZyiP86LrKXtnxgm1KNkPqkxm6lndd7_x4fkXYvE"
           title="Problem Solving Basic"
-          
           link="https://example.com/link-to-certification-2"
         />
         <CertificationBox
           logo="https://media.licdn.com/dms/image/v2/C4D0BAQFd9H6cxFC3wQ/company-logo_100_100/company-logo_100_100/0/1630549313166?e=1732147200&v=beta&t=lbbuC7_bSl16Rew1PlMvMKwtWRkGij7zkzxZYUNPHAo"
           title="Namaste React"
-         
           link="https://example.com/link-to-certification-3"
         />
         <CertificationBox
           logo="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
           title="Web Development Bootcamp"
-          
           link="https://example.com/link-to-certification-4"
         />
       </div>
