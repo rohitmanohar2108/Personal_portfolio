@@ -35,7 +35,14 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-black flex p-6">
       {/* Left Column */}
-      <div className="w-1/4 bg-stone-900 p-6 rounded-lg flex flex-col items-center">
+      <div
+        className="w-1/4 p-6 rounded-lg flex flex-col items-center"
+        style={{
+          backgroundImage: 'url(https://img.freepik.com/free-photo/brown-fine-metal-textured-background_53876-103913.jpg?t=st=1725281891~exp=1725285491~hmac=e0244e30f6bc7e605bbbf1d4f5d23a187e384322eb249dc35eb4adb9a678aafc&w=1480)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         {/* Profile Photo */}
         <img
           src="https://media-sin6-3.cdn.whatsapp.net/v/t61.24694-24/453603651_520834290411384_6429731950094255849_n.jpg?ccb=11-4&oh=01_Q5AaIEGfLjFtBOFfDF1YPFoYWR-OdQzMAMTPXB2Sta2rfey_&oe=66E120FF&_nc_sid=5e03e0&_nc_cat=102" // Replace with your actual profile photo URL
@@ -92,7 +99,14 @@ const Home = () => {
       </div>
 
       {/* Right Column */}
-      <div className="w-3/4 bg-stone-900 p-6 ml-6 rounded-lg relative">
+      <div
+        className="w-3/4 p-6 ml-6 rounded-lg relative"
+        style={{
+          backgroundImage: 'url(https://img.freepik.com/free-photo/brown-fine-metal-textured-background_53876-103913.jpg?t=st=1725281891~exp=1725285491~hmac=e0244e30f6bc7e605bbbf1d4f5d23a187e384322eb249dc35eb4adb9a678aafc&w=1480)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         {/* Top-right Navigation */}
         <div className="absolute top-0 right-0 mt-4 mr-4">
           <div className="flex space-x-4">
