@@ -25,7 +25,7 @@ const Resume = () => {
 
       {/* Education Section */}
       <div className="mb-8 resume-section">
-        <h2 className="text-2xl text-white flex items-center mb-2 font-courier-prime">
+        <h2 className="text-3xl  flex items-center mb-2 font-courier-prime text-amber-400">
           <FaGraduationCap className="text-amber-500 text-3xl mr-2" /> Education
         </h2>
         <div className="bg-black/30 p-6 rounded-lg shadow-md font-courier-prime ">
@@ -37,7 +37,7 @@ const Resume = () => {
 
       {/* Experience Section */}
       <div className="resume-section">
-        <h2 className="text-2xl text-white flex items-center mb-2 font-courier-prime">
+        <h2 className="text-3xl text-amber-400 flex items-center mb-2 font-courier-prime">
           <FaBriefcase className="text-amber-500 text-3xl mr-2" /> Experience
         </h2>
         <div className="bg-black/30 p-6 rounded-lg shadow-md mb-4 font-courier-prime ">

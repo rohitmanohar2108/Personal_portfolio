@@ -12,15 +12,15 @@ const CircularTimeline = ({ percentage, title, description }) => {
   const circumference = 2 * Math.PI * radius; // Circumference of the circle
 
   useEffect(() => {
-    // Setup Intersection Observer
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.unobserve(entry.target); // Stop observing after it has come into view
+          observer.unobserve(entry.target); 
         }
       },
-      { threshold: 0.1 } // Trigger when 10% of the component is in view
+      { threshold: 0.1 } 
     );
 
     if (containerRef.current) {

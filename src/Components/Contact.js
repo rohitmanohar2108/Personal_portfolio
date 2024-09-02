@@ -79,6 +79,7 @@ const Contact = () => {
           allowFullScreen=""
           loading="lazy"
           title="Google Map"
+          border="rounded"
         ></iframe>
       </div> 
     </div>

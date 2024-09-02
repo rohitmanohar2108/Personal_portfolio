@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 
-// Sample project data
 const projects = {
   All: [
     {
@@ -69,8 +68,6 @@ const Portfolio = () => {
     <div>
       <h1 className="text-white text-3xl mb-4">Portfolio</h1>
       <hr className="w-32 border-2 border-yellow-600 mb-6 -mx-2 -my-2 rounded-full" />
-
-      {/* Navigation Bar */}
       <div className="flex space-x-4 mb-8">
         <button
           onClick={() => setActiveTab('All')}
@@ -92,7 +89,6 @@ const Portfolio = () => {
         </button>
       </div>
 
-      {/* Content Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300 font-courier-prime">
         {projects[activeTab].map(project => (
           <a
@@ -105,10 +101,10 @@ const Portfolio = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="font-bold w-full h-48 object-cover font-courier-prime"
+              className="font-bold w-full h-48 object-cover font-courier-prime "
             />
             <div className="p-4">
-              <h3 className="font-semibold mb-2 text-sm">{project.title}</h3>
+              <h3 className="font-semibold mb-2 text-xl text-amber-400">{project.title}</h3>
               <p>{project.description}</p>
             </div>
           </a>
