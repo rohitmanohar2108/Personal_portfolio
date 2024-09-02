@@ -31,7 +31,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full p-2 rounded-lg bg-gray-700 text-gray-300 border border-gray-600 text-sm"
+                className="w-full p-2 rounded-lg bg-black/30 text-gray-300 border border-gray-600 text-sm"
                 placeholder="Your Name"
                 required
               />
@@ -42,7 +42,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full p-2 rounded-lg bg-gray-700 text-gray-300 border border-gray-600 text-sm"
+                className="w-full p-2 rounded-lg bg-black/30 text-gray-300 border border-gray-600 text-sm"
                 placeholder="Your Email"
                 required
               />
@@ -52,7 +52,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
-                className="w-full p-2 rounded-lg bg-gray-700 text-gray-300 border border-gray-600 text-sm"
+                className="w-full p-2 rounded-lg bg-black/30 text-gray-300 border border-gray-600 text-sm"
                 rows="4"
                 placeholder="Your Message"
                 required
