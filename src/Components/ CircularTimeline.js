@@ -6,21 +6,22 @@ const CircularTimeline = ({ percentage, title, description }) => {
   const barRef = useRef(null);
   const percentageRef = useRef(null);
   const containerRef = useRef(null); // Reference to the container div
+  const titleRef = useRef(null); // Reference to the title element
+  const descriptionRef = useRef(null); // Reference to the description element
   const [inView, setInView] = useState(false); // State to track if the component is in view
 
   const radius = 50; // Radius of the circle
   const circumference = 2 * Math.PI * radius; // Circumference of the circle
 
   useEffect(() => {
-    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.unobserve(entry.target); 
+          observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.1 } 
+      { threshold: 0.1 }
     );
 
     if (containerRef.current) {
@@ -71,6 +72,24 @@ const CircularTimeline = ({ percentage, title, description }) => {
         duration: 10,
         ease: "linear",
       });
+
+      // Animate the title
+      gsap.from(titleRef.current, {
+        opacity: 0,
+        y: -20,
+        duration: 1,
+        delay: 0.5,
+        ease: "power2.out",
+      });
+
+      // Animate the description
+      gsap.from(descriptionRef.current, {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        delay: 0.7,
+        ease: "power2.out",
+      });
     }
   }, [inView, circumference, percentage]);
 
@@ -100,10 +119,23 @@ const CircularTimeline = ({ percentage, title, description }) => {
             fill="none"
           />
         </svg>
-        <div className="percentage absolute inset-0 flex items-center justify-center text-2xl font-bold text-white" ref={percentageRef}></div>
+        <div
+          className="percentage absolute inset-0 flex items-center justify-center text-2xl font-bold text-white"
+          ref={percentageRef}
+        ></div>
       </div>
-      <h3 className="text-white text-2xl mt-4 font-courier-prime ">{title}</h3>
-      <p className="text-gray-400 text-sm font-courier-prime ">{description}</p>
+      <h3
+        className="text-white text-2xl mt-4 font-courier-prime"
+        ref={titleRef}
+      >
+        {title}
+      </h3>
+      <p
+        className="text-gray-400 text-sm font-courier-prime"
+        ref={descriptionRef}
+      >
+        {description}
+      </p>
     </div>
   );
 };
