@@ -98,6 +98,7 @@ const About = () => {
             engaging user experience.
           </p>
         </div>
+        <p className="text-amber-400 text-4xl mt-4  font-extrabold font-courier-prime">My Skills</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
         <CircularTimeline

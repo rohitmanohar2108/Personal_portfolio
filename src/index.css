@@ -3,34 +3,45 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Nano+Sans:wght@400;700&display=swap');
 
-/* Circular Progress Bar Styles */
+/* index.css */
+/* index.css */
 .circular-progress {
     position: relative;
-    width: 120px;
-    height: 120px;
   }
   
-  .circular-progress .circle-bg {
+  .circular-progress svg {
+    transform: rotate(-90deg); /* Rotate the SVG to start the progress at the top */
+  }
+  
+  .circle-bg {
     fill: none;
-    stroke: #eee;
-    stroke-width: 12;
+    stroke: #e6e6e6; /* Light gray background for the circle */
+    stroke-width: 10;
   }
   
-  .circular-progress .circle {
+  .circle {
     fill: none;
-    stroke-width: 12;
-    stroke-linecap: round;
-    transform: rotate(-90deg);
-    transform-origin: 50% 50%;
+    stroke: #FEBE10; /* Main progress color */
+    stroke-width: 10;
+    stroke-dasharray: 314; /* Circumference value */
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.3s;
   }
   
-  .circular-progress .percentage {
+  .bar {
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 314; /* Circumference value */
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.3s;
+  }
+  
+  .percentage {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
-    color: #fff;
   }
   
