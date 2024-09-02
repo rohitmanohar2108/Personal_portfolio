@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaBirthdayCake } from 'react-icons/fa';
-import About from './About';
-import Resume from './Resume';
-import Portfolio from './Portfolio';
-import Blog from './Blog';
-import Contact from './Contact';
+import React, { useState } from "react";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaBirthdayCake,
+} from "react-icons/fa";
+import About from "./About";
+import Resume from "./Resume";
+import Portfolio from "./Portfolio";
+import Blog from "./Blog";
+import Contact from "./Contact";
 
 const Home = () => {
   // State to track the current section, defaulting to 'About'
-  const [currentSection, setCurrentSection] = useState('About');
+  const [currentSection, setCurrentSection] = useState("About");
 
   // Function to handle section change
   const handleSectionChange = (section) => {
@@ -17,15 +22,15 @@ const Home = () => {
 
   const renderContent = () => {
     switch (currentSection) {
-      case 'About':
+      case "About":
         return <About />;
-      case 'Resume':
+      case "Resume":
         return <Resume />;
-      case 'Portfolio':
+      case "Portfolio":
         return <Portfolio />;
-      case 'Blog':
+      case "Blog":
         return <Blog />;
-      case 'Contact':
+      case "Contact":
         return <Contact />;
       default:
         return <p className="text-gray-300">Welcome to My Portfolio</p>;
@@ -38,7 +43,8 @@ const Home = () => {
       <div
         className="w-1/4 p-6 rounded-lg flex flex-col items-center"
         style={{
-          background: 'linear-gradient(to bottom right, #000000, #6a0dad)', // Black and purple gradient
+          background:
+            "linear-gradient(45deg, rgba(106, 13, 173, 0.5), rgba(0, 0, 0, 0.5)), repeating-linear-gradient(135deg, rgba(106, 13, 173, 0.1) 0%, rgba(106, 13, 173, 0.1) 10%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 20%)",
         }}
       >
         {/* Profile Photo */}
@@ -47,8 +53,10 @@ const Home = () => {
           alt="Profile"
           className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-black"
         />
-        
-        <h2 className="text-white text-2xl mb-2 font-courier-prime">Rohit Manohar</h2>
+
+        <h2 className="text-white text-2xl mb-2 font-courier-prime">
+          Rohit Manohar
+        </h2>
         <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-courier-prime">
           Software Engineer
         </div>
@@ -57,14 +65,15 @@ const Home = () => {
         <hr className="w-44 border-gray-300 mb-4" />
 
         {/* Icons and Contact Details */}
-        <div className="bg-black/50 p-4 rounded-lg w-full ">
-
+        <div className="bg-purple-800/50 p-4 rounded-lg w-full ">
           {/* Email */}
           <div className="mb-4">
             <p className="text-gray-400 mb-1 font-courier-prime">Email</p>
             <div className="flex items-center">
               <FaEnvelope className=" mr-2 text-amber-500" size={20} />
-              <p className="text-white font-courier-prime text-sm">rohit@example.com</p>
+              <p className="text-white font-courier-prime text-sm">
+                rohit@example.com
+              </p>
             </div>
           </div>
 
@@ -90,7 +99,9 @@ const Home = () => {
             <p className="text-gray-400 mb-1 font-courier-prime">Location</p>
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-amber-500 mr-2" size={20} />
-              <p className="text-white font-courier-prime text-sm">Surathkal, India</p>
+              <p className="text-white font-courier-prime text-sm">
+                Surathkal, India
+              </p>
             </div>
           </div>
         </div>
@@ -100,39 +111,54 @@ const Home = () => {
       <div
         className="w-3/4 p-6 ml-6 rounded-lg relative"
         style={{
-          background: 'linear-gradient(to bottom right, #000000, #6a0dad)', // Black and purple gradient
+          background:
+            "linear-gradient(45deg, rgba(106, 13, 173, 0.5), rgba(0, 0, 0, 0.5)), repeating-linear-gradient(135deg, rgba(106, 13, 173, 0.1) 0%, rgba(106, 13, 173, 0.1) 10%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 20%)",
         }}
       >
         {/* Top-right Navigation */}
         <div className="absolute top-0 right-0 mt-4 mr-4">
           <div className="flex space-x-4">
             <button
-              onClick={() => handleSectionChange('About')}
-              className={`px-4 py-2 rounded-full  bg-black/50 hover:bg-violet-900 ${currentSection === 'About' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              onClick={() => handleSectionChange("About")}
+              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
+                currentSection === "About" ? "text-amber-500" : "text-gray-300"
+              } hover:text-amber-400 font-courier-prime`}
             >
               About
             </button>
             <button
-              onClick={() => handleSectionChange('Resume')}
-              className={`px-4 py-2 rounded-full  bg-black/50 hover:bg-violet-900 ${currentSection === 'Resume' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              onClick={() => handleSectionChange("Resume")}
+              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
+                currentSection === "Resume" ? "text-amber-500" : "text-gray-300"
+              } hover:text-amber-400 font-courier-prime`}
             >
               Education
             </button>
             <button
-              onClick={() => handleSectionChange('Portfolio')}
-              className={`px-4 py-2 rounded-full  bg-black/50 hover:bg-violet-900  ${currentSection === 'Portfolio' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              onClick={() => handleSectionChange("Portfolio")}
+              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
+                currentSection === "Portfolio"
+                  ? "text-amber-500"
+                  : "text-gray-300"
+              } hover:text-amber-400 font-courier-prime`}
             >
               Portfolio
             </button>
             <button
-              onClick={() => handleSectionChange('Blog')}
-              className={`px-4 py-2 rounded-full  bg-black/50 hover:bg-violet-900 ${currentSection === 'Blog' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              onClick={() => handleSectionChange("Blog")}
+              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
+                currentSection === "Blog" ? "text-amber-500" : "text-gray-300"
+              } hover:text-amber-400 font-courier-prime`}
             >
               Blog
             </button>
             <button
-              onClick={() => handleSectionChange('Contact')}
-              className={`px-4 py-2 rounded-full bg-black/50 hover:bg-violet-90  hover:bg-violet-900 ${currentSection === 'Contact' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              onClick={() => handleSectionChange("Contact")}
+              className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-90  hover:bg-violet-900 text-sm ${
+                currentSection === "Contact"
+                  ? "text-amber-500"
+                  : "text-gray-300"
+              } hover:text-amber-400 font-courier-prime`}
             >
               Contact
             </button>

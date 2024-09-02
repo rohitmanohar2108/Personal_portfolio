@@ -28,7 +28,7 @@ const Resume = () => {
         <h2 className="text-3xl  flex items-center mb-2 font-courier-prime text-amber-400">
           <FaGraduationCap className="text-amber-500 text-3xl mr-2" /> Education
         </h2>
-        <div className="bg-black/30 p-6 rounded-lg shadow-md font-courier-prime ">
+        <div className="bg-purple-800/50 p-6 rounded-lg shadow-md font-courier-prime ">
           <h3 className="text-xl text-gray-100  mb-2">National Institute of Technology Karnataka (NITK)</h3>
           <p className="text-gray-400 ">B.Tech in Computer Science and Engineering</p>
           <p className="text-gray-500">2021 - Present</p>
@@ -40,7 +40,7 @@ const Resume = () => {
         <h2 className="text-3xl text-amber-400 flex items-center mb-2 font-courier-prime">
           <FaBriefcase className="text-amber-500 text-3xl mr-2" /> Experience
         </h2>
-        <div className="bg-black/30 p-6 rounded-lg shadow-md mb-4 font-courier-prime ">
+        <div className="bg-purple-800/50 p-6 rounded-lg shadow-md mb-4 font-courier-prime ">
           <h3 className="text-xl text-gray-100 mb-2">TEDx NITK Surathkal Media Team</h3>
           <p className="text-gray-400">Media Team Member</p>
           <p className="text-gray-500">July 2023 - Present</p>
@@ -50,7 +50,7 @@ const Resume = () => {
           </p>
         </div>
 
-        <div className="bg-black/30 p-6 rounded-lg shadow-md font-courier-prime ">
+        <div className="bg-purple-800/50 p-6 rounded-lg shadow-md font-courier-prime ">
           <h3 className="text-xl text-gray-100 mb-2">React Projects</h3>
           <p className="text-gray-400">React Developer</p>
           <p className="text-gray-500">June 2023 - Present</p>

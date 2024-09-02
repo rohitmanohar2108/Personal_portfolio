@@ -17,7 +17,7 @@ const Contact = () => {
         
 
         {/* Contact Form */}
-        <div className="bg-black/30  p-6 rounded-lg shadow-md">
+        <div className="bg-purple-800/50  p-6 rounded-lg shadow-md">
           <h2 className="text-2xl text-white font-nano mb-4">Get in Touch</h2>
           <form
             action="mailto:your.email@example.com"
@@ -69,7 +69,7 @@ const Contact = () => {
       </div>
 
       {/* Map Section (Optional) */}
-       <div className="bg-black/30 p-6 rounded-lg shadow-md mt-8">
+       <div className="bg-purple-800/50 p-6 rounded-lg shadow-md mt-8">
         <h2 className="text-2xl text-white font-nano mb-4">Our Location</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.401332034741!2d-122.08424968468145!3d37.42199977982599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbbf5a3e1b59b%3A0x1b24e1e83951d6a0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1633028075396!5m2!1sen!2sus"

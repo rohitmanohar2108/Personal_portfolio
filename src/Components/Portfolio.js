@@ -96,7 +96,7 @@ const Portfolio = () => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-card block bg-black/30 rounded-lg overflow-hidden"
+            className="project-card block bg-purple-800/50 rounded-lg overflow-hidden"
           >
             <img
               src={project.image}
