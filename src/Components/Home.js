@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaBirthdayCake } from 'react-icons/fa';
 import About from './About';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
@@ -33,18 +33,18 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 flex p-6">
+    <div className="min-h-screen bg-black flex p-6">
       {/* Left Column */}
-      <div className="w-1/4 bg-black p-6 rounded-lg flex flex-col items-center">
+      <div className="w-1/4 bg-stone-900 p-6 rounded-lg flex flex-col items-center">
         {/* Profile Photo */}
         <img
           src="https://media-sin6-3.cdn.whatsapp.net/v/t61.24694-24/453603651_520834290411384_6429731950094255849_n.jpg?ccb=11-4&oh=01_Q5AaIEGfLjFtBOFfDF1YPFoYWR-OdQzMAMTPXB2Sta2rfey_&oe=66E120FF&_nc_sid=5e03e0&_nc_cat=102" // Replace with your actual profile photo URL
           alt="Profile"
-          className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-green-500"
+          className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-black"
         />
         
         <h2 className="text-white text-2xl mb-2 font-courier-prime">Rohit Manohar</h2>
-        <div className="bg-gray-800 text-white px-4 py-2 rounded-lg mb-4 hover:text-green-500 hover:bg-teal-950 font-courier-prime">
+        <div className="bg-black text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 hover:bg-stone-700 font-courier-prime">
           Software Engineer
         </div>
 
@@ -52,14 +52,14 @@ const Home = () => {
         <hr className="w-44 border-gray-300 mb-4" />
 
         {/* Icons and Contact Details */}
-        <div className="bg-gradient-to-r from-teal-900 via-teal-9500 to-gray-700 p-4 rounded-lg w-full ">
+        <div className="bg-black hover:bg-stone-800 p-4 rounded-lg w-full ">
 
           {/* Email */}
           <div className="mb-4">
             <p className="text-gray-400 mb-1 font-courier-prime">Email</p>
             <div className="flex items-center">
-              <FaEnvelope className=" mr-2 text-green-500" size={20} />
-              <p className="text-white font-courier-prime">rohit@example.com</p>
+              <FaEnvelope className=" mr-2 text-amber-500" size={20} />
+              <p className="text-white font-courier-prime text-sm">rohit@example.com</p>
             </div>
           </div>
 
@@ -67,8 +67,16 @@ const Home = () => {
           <div className="mb-4">
             <p className="text-gray-400 mb-1 font-courier-prime">Phone</p>
             <div className="flex items-center">
-              <FaPhone className="text-green-500 mr-2" size={20} />
-              <p className="text-white ">+123 456 7890</p>
+              <FaPhone className="text-amber-500 mr-2" size={20} />
+              <p className="text-white  text-sm">+123 456 7890</p>
+            </div>
+          </div>
+
+          <div className="mb-4">
+            <p className="text-gray-400 mb-1 font-courier-prime">Birthday</p>
+            <div className="flex items-center">
+              <FaBirthdayCake className="text-amber-500 mr-2" size={20} />
+              <p className="text-white text-sm">21-08-2004</p>
             </div>
           </div>
 
@@ -76,45 +84,45 @@ const Home = () => {
           <div>
             <p className="text-gray-400 mb-1 font-courier-prime">Location</p>
             <div className="flex items-center">
-              <FaMapMarkerAlt className="text-green-500 mr-2" size={20} />
-              <p className="text-white font-courier-prime">Surathkal, India</p>
+              <FaMapMarkerAlt className="text-amber-500 mr-2" size={20} />
+              <p className="text-white font-courier-prime text-sm">Surathkal, India</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Right Column */}
-      <div className="w-3/4 bg-black p-6 ml-6 rounded-lg relative">
+      <div className="w-3/4 bg-stone-900 p-6 ml-6 rounded-lg relative">
         {/* Top-right Navigation */}
         <div className="absolute top-0 right-0 mt-4 mr-4">
           <div className="flex space-x-4">
             <button
               onClick={() => handleSectionChange('About')}
-              className={`px-4 py-2 rounded-full  bg-gray-800  hover:bg-teal-950 ${currentSection === 'About' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500 font-courier-prime`}
+              className={`px-4 py-2 rounded-full  bg-black  hover:bg-stone-800 ${currentSection === 'About' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               About
             </button>
             <button
               onClick={() => handleSectionChange('Resume')}
-              className={`px-4 py-2 rounded-full  bg-gray-800 hover:bg-teal-950 ${currentSection === 'Resume' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500 font-courier-prime`}
+              className={`px-4 py-2 rounded-full  bg-black  hover:bg-stone-800 ${currentSection === 'Resume' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               Resume
             </button>
             <button
               onClick={() => handleSectionChange('Portfolio')}
-              className={`px-4 py-2 rounded-full  bg-gray-800 hover:bg-teal-950  ${currentSection === 'Portfolio' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500 font-courier-prime`}
+              className={`px-4 py-2 rounded-full  bg-black  hover:bg-stone-800  ${currentSection === 'Portfolio' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               Portfolio
             </button>
             <button
               onClick={() => handleSectionChange('Blog')}
-              className={`px-4 py-2 rounded-full  bg-gray-800 hover:bg-teal-950 ${currentSection === 'Blog' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500 font-courier-prime`}
+              className={`px-4 py-2 rounded-full  bg-black  hover:bg-stone-800 ${currentSection === 'Blog' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               Blog
             </button>
             <button
               onClick={() => handleSectionChange('Contact')}
-              className={`px-4 py-2 rounded-full bg-gray-800 hover:bg-teal-950 ${currentSection === 'Contact' ? 'text-green-500' : 'text-gray-300'} hover:text-green-500 font-courier-prime`}
+              className={`px-4 py-2 rounded-full bg-black  hover:bg-stone-800 ${currentSection === 'Contact' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               Contact
             </button>
