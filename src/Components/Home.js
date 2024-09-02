@@ -51,7 +51,7 @@ const Home = () => {
         <img
           src="https://as1.ftcdn.net/v2/jpg/05/90/59/88/1000_F_590598870_TOcGd4cUZzPoEMlxSc7XYwcupHOE0vLM.jpg" // Replace with your actual profile photo URL
           alt="Profile"
-          className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-black"
+          className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-purple-700"
         />
 
         <h2 className="text-white text-2xl mb-2 font-courier-prime">
@@ -59,6 +59,11 @@ const Home = () => {
         </h2>
         <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-courier-prime">
           Software Engineer
+        </div>
+        <div className="bg-purple-700/50 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-courier-prime shadow-md shadow-purple-400 transition-transform transform hover:scale-105">
+          <a href="#" target="_blank" rel="noopener noreferrer" className="">
+            View Resume
+          </a>
         </div>
 
         {/* Horizontal Line */}
