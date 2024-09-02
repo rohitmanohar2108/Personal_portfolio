@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nano: ['"Nano Sans"', 'sans-serif'],
+        'nano': ['"Nano Sans"', 'sans-serif'],
+        'courier-prime': ['Courier Prime', 'monospace'],
       },
     },
   },

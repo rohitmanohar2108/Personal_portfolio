@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { FaCode, FaPaintBrush, FaCogs, FaLaptopCode } from "react-icons/fa"; // Import the icons you need
-
+import { FcAbout } from "react-icons/fc";
 const About = () => {
   useEffect(() => {
     // Animate the header and paragraphs
@@ -21,10 +21,16 @@ const About = () => {
 
   return (
     <div>
-      <h1 className="text-white text-3xl font-nano about-header">About Me</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-white text-3xl font-courier-prime about-header">
+          About Me
+        </h1>
+        <FcAbout className="t" />
+      </div>
+
       <hr className="w-32 border-2 border-green-500 mb-6 mt-3 rounded-full about-header" />
 
-      <p className="text-white font-nano about-paragraph">
+      <p className="text-white font-courier-prime about-paragraph">
         I am a Computer Science Student at NITK. I have a deep passion for
         coding and constantly strive to enhance my skills by learning new
         technologies. I love tackling challenging problems and finding
@@ -33,7 +39,7 @@ const About = () => {
         projects and learn from others in the field.
       </p>
 
-      <p className="text-white mt-4 font-nano about-paragraph">
+      <p className="text-white mt-4 font-courier-prime about-paragraph">
         When I am not coding, I enjoy exploring the latest tech trends and
         participating in hackathons and coding competitions. Let's connect and
         create something amazing together! Whether it's building a new app,
@@ -42,43 +48,53 @@ const About = () => {
         tech community.
       </p>
 
-      <h2 className="text-white text-3xl mt-4 font-nano about-header">What I'm Doing</h2>
+      <h2 className="text-green-500 text-4xl mt-4  font-extrabold font-courier-prime">
+        What I'm Doing
+      </h2>
 
       {/* Skill Boxes Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         {/* Box 1: Web Design */}
-        <div className="bg-teal-950 p-6 rounded-lg flex flex-col items-center text-center skill-box">
+        <div className="bg-teal-950 p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
           <FaPaintBrush className="text-green-500 text-5xl mb-3" />
-          <h3 className="text-white text-2xl font-nano mb-2">Web Design</h3>
+          <h3 className="text-white text-2xl mb-2">Web Design</h3>
           <p className="text-gray-400 text-base">
-            Creating visually appealing designs and user interfaces for websites. Expertise in UI/UX principles, responsive design, and modern design tools.
+            Creating visually appealing designs and user interfaces for
+            websites. Expertise in UI/UX principles, responsive design, and
+            modern design tools.
           </p>
         </div>
 
         {/* Box 2: Web Development */}
-        <div className="bg-teal-950  p-6 rounded-lg flex flex-col items-center text-center skill-box">
+        <div className="bg-teal-950  p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
           <FaLaptopCode className="text-green-500 text-5xl mb-3" />
-          <h3 className="text-white text-2xl font-nano mb-2">Web Development</h3>
+          <h3 className="text-white text-2xl mb-2">Web Development</h3>
           <p className="text-gray-400 text-base">
-            Building and maintaining websites using various technologies such as HTML, CSS, JavaScript, and frameworks like React. Focus on performance and scalability.
+            Building and maintaining websites using various technologies such as
+            HTML, CSS, JavaScript, and frameworks like React. Focus on
+            performance and scalability.
           </p>
         </div>
 
         {/* Box 3: Software Development */}
-        <div className="bg-teal-950  p-6 rounded-lg flex flex-col items-center text-center skill-box">
+        <div className="bg-teal-950  p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
           <FaCode className="text-green-500 text-5xl mb-3" />
-          <h3 className="text-white text-2xl font-nano mb-2">Software Development</h3>
+          <h3 className="text-white text-2xl  mb-2">Software Development</h3>
           <p className="text-gray-400 text-base">
-            Developing software solutions with a focus on algorithms, data structures, and code optimization. Proficient in languages like Java and C++.
+            Developing software solutions with a focus on algorithms, data
+            structures, and code optimization. Proficient in languages like Java
+            and C++.
           </p>
         </div>
 
         {/* Box 4: Front-End */}
-        <div className="bg-teal-950  p-6 rounded-lg flex flex-col items-center text-center skill-box">
+        <div className="bg-teal-950  p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
           <FaCogs className="text-green-500 text-5xl mb-3" />
-          <h3 className="text-white text-2xl font-nano mb-2">Front-End</h3>
+          <h3 className="text-white text-2xl  mb-2">Front-End</h3>
           <p className="text-gray-400 text-base">
-            Specializing in creating interactive and dynamic user interfaces. Experienced with frameworks such as React, ensuring a smooth and engaging user experience.
+            Specializing in creating interactive and dynamic user interfaces.
+            Experienced with frameworks such as React, ensuring a smooth and
+            engaging user experience.
           </p>
         </div>
       </div>
@@ -87,4 +103,3 @@ const About = () => {
 };
 
 export default About;
-
