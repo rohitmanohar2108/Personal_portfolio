@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { FaCode, FaPaintBrush, FaCogs, FaLaptopCode } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
 import CircularTimeline from "./ CircularTimeline";
+import CertificationBox from "./CertificationBox";
 
 const About = () => {
   useEffect(() => {
@@ -153,6 +154,35 @@ const About = () => {
           percentage={85}
           title="Front-End Development"
           description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
+        />
+      </div>
+      <h2 className="text-amber-400 text-4xl mt-8 font-extrabold font-courier-prime">
+        Certifications
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        <CertificationBox
+          logo="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+          title="C++ Programming"
+        
+          link="https://example.com/link-to-certification-1"
+        />
+        <CertificationBox
+          logo="https://media.licdn.com/dms/image/v2/D560BAQE8MivsmbT7Ig/company-logo_100_100/company-logo_100_100/0/1705561459405/hackerrank_logo?e=1732147200&v=beta&t=3VXpZyiP86LrKXtnxgm1KNkPqkxm6lndd7_x4fkXYvE"
+          title="Problem Solving Basic"
+          
+          link="https://example.com/link-to-certification-2"
+        />
+        <CertificationBox
+          logo="https://media.licdn.com/dms/image/v2/C4D0BAQFd9H6cxFC3wQ/company-logo_100_100/company-logo_100_100/0/1630549313166?e=1732147200&v=beta&t=lbbuC7_bSl16Rew1PlMvMKwtWRkGij7zkzxZYUNPHAo"
+          title="Namaste React"
+         
+          link="https://example.com/link-to-certification-3"
+        />
+        <CertificationBox
+          logo="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+          title="Web Development Bootcamp"
+          
+          link="https://example.com/link-to-certification-4"
         />
       </div>
     </div>
