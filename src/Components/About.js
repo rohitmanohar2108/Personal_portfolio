@@ -99,7 +99,7 @@ const About = () => {
             style={{ backgroundImage: "url('https://okcredit-blog-images-prod.storage.googleapis.com/2021/03/Software-Development-Business1--1-.jpg')" }}
           ></div>
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
-          <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
             <FaCode className="text-amber-500 text-5xl mb-3" />
             <h3 className="text-white text-2xl mb-2">Software Development</h3>
             <p className="text-white text-sm">
