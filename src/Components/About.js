@@ -104,22 +104,22 @@ const About = () => {
         <CircularTimeline
           percentage={90}
           title="Web Development"
-          description="Experienced in building web applications using React, Node.js, and other modern web technologies."
+          description="Experienced in building web applications using React and other modern web technologies."
         />
         <CircularTimeline
-          percentage={80}
+          percentage={50}
           title="Data Structures & Algorithms"
-          description="Proficient in problem-solving using DSA, with experience in competitive programming."
+          description="Decent problem-solving using DSA, with experience Programming"
         />
         <CircularTimeline
           percentage={75}
-          title="UI/UX Design"
+          title="Graphic UI Design"
           description="Skilled in designing intuitive user interfaces and experiences with a focus on user-centric design."
         />
         <CircularTimeline
           percentage={85}
           title="Front-End Development"
-          description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and CSS."
+          description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
         />
       </div>
     </div>
