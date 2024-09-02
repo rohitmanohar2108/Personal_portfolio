@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { gsap } from 'gsap';
 
 // Sample project data
 const projects = {
@@ -8,7 +9,7 @@ const projects = {
       image: 'https://do6gp1uxl3luu.cloudfront.net/projects/netflixProject.png',
       title: 'Film Ninja',
       description: 'Web Dev',
-      link: 'https://github.com/rohitmanohar2108/FilmNinja'
+      link: '#'
     },
     {
       id: 2,
@@ -31,7 +32,7 @@ const projects = {
       image: 'https://do6gp1uxl3luu.cloudfront.net/projects/netflixProject.png',
       title: 'FilmNinja',
       description: 'Web Dev',
-      link: 'https://github.com/rohitmanohar2108/FilmNinja'
+      link: '#'
     },
     {
       id: 2,
@@ -56,9 +57,18 @@ const projects = {
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState('All');
 
+  useEffect(() => {
+    gsap.fromTo(
+      '.project-card',
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1, delay: 0.5, stagger: 0.2 }
+    );
+  }, [activeTab]);
+
   return (
     <div>
       <h1 className="text-white text-3xl mb-4">Portfolio</h1>
+      <hr className="w-32 border-2 border-yellow-600 mb-6 -mx-2 -my-2 rounded-full" />
 
       {/* Navigation Bar */}
       <div className="flex space-x-4 mb-8">
@@ -90,7 +100,7 @@ const Portfolio = () => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-black/30 rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300 "
+            className="project-card block bg-black/30 rounded-lg overflow-hidden"
           >
             <img
               src={project.image}
@@ -98,7 +108,7 @@ const Portfolio = () => {
               className="font-bold w-full h-48 object-cover font-courier-prime"
             />
             <div className="p-4">
-              <h3 className="font-semibold mb-2   text-sm">{project.title}</h3>
+              <h3 className="font-semibold mb-2 text-sm">{project.title}</h3>
               <p>{project.description}</p>
             </div>
           </a>
@@ -109,4 +119,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
