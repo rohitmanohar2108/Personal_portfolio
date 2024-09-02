@@ -2,3 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Nano+Sans:wght@400;700&display=swap');
+
+/* Circular Progress Bar Styles */
+.circular-progress {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .circular-progress .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 12;
+  }
+  
+  .circular-progress .circle {
+    fill: none;
+    stroke-width: 12;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+  
+  .circular-progress .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  

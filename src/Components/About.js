@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { FaCode, FaPaintBrush, FaCogs, FaLaptopCode } from "react-icons/fa"; // Import the icons you need
 import { FcAbout } from "react-icons/fc";
+import CircularTimeline from "./ CircularTimeline";
 const About = () => {
   useEffect(() => {
     // Animate the header and paragraphs
@@ -97,6 +98,28 @@ const About = () => {
             engaging user experience.
           </p>
         </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        <CircularTimeline
+          percentage={90}
+          title="Web Development"
+          description="Experienced in building web applications using React, Node.js, and other modern web technologies."
+        />
+        <CircularTimeline
+          percentage={80}
+          title="Data Structures & Algorithms"
+          description="Proficient in problem-solving using DSA, with experience in competitive programming."
+        />
+        <CircularTimeline
+          percentage={75}
+          title="UI/UX Design"
+          description="Skilled in designing intuitive user interfaces and experiences with a focus on user-centric design."
+        />
+        <CircularTimeline
+          percentage={85}
+          title="Front-End Development"
+          description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and CSS."
+        />
       </div>
     </div>
   );
