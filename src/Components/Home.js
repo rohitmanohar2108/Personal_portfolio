@@ -38,7 +38,7 @@ const Home = () => {
       <div
         className="w-1/4 p-6 rounded-lg flex flex-col items-center"
         style={{
-          backgroundImage: 'url(https://www.jswpaints.in/themes/custom/jsw_theme/gallery/5057__main.jpg)',
+          backgroundImage: 'url(https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches_53876-129736.jpg?t=st=1725286755~exp=1725290355~hmac=af1f8298c90775e48c2344a07d08b4ed25f29c8a07b9ea7014c8cd848f69882d&w=1480)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -102,7 +102,7 @@ const Home = () => {
       <div
         className="w-3/4 p-6 ml-6 rounded-lg relative"
         style={{
-          backgroundImage: 'url(https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches-vector_53876-143109.jpg?t=st=1725282406~exp=1725286006~hmac=f4b63f64f49a782e73a5cc195777de0a7bb08d33eb4749d4d1399f711d70b316&w=1480)',
+          backgroundImage: 'url(https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches_53876-129736.jpg?t=st=1725286755~exp=1725290355~hmac=af1f8298c90775e48c2344a07d08b4ed25f29c8a07b9ea7014c8cd848f69882d&w=1480)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
