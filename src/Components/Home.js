@@ -38,7 +38,7 @@ const Home = () => {
       <div
         className="w-1/4 p-6 rounded-lg flex flex-col items-center"
         style={{
-          backgroundImage: 'url(https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches_53876-129736.jpg?w=1480&t=st=1725286361~exp=1725286961~hmac=7c3a959c3184158b40bd132387e5a73a6f8b4b51a6a04715cc3f4d22877357f0)',
+          backgroundImage: 'url(https://www.jswpaints.in/themes/custom/jsw_theme/gallery/5057__main.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
