@@ -38,9 +38,7 @@ const Home = () => {
       <div
         className="w-1/4 p-6 rounded-lg flex flex-col items-center"
         style={{
-          backgroundImage: 'url(https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches_53876-129736.jpg?t=st=1725286755~exp=1725290355~hmac=af1f8298c90775e48c2344a07d08b4ed25f29c8a07b9ea7014c8cd848f69882d&w=1480)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          background: 'linear-gradient(to bottom right, #000000, #6a0dad)', // Black and purple gradient
         }}
       >
         {/* Profile Photo */}
@@ -51,7 +49,7 @@ const Home = () => {
         />
         
         <h2 className="text-white text-2xl mb-2 font-courier-prime">Rohit Manohar</h2>
-        <div className="bg-black/30 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-courier-prime">
+        <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-courier-prime">
           Software Engineer
         </div>
 
@@ -59,7 +57,7 @@ const Home = () => {
         <hr className="w-44 border-gray-300 mb-4" />
 
         {/* Icons and Contact Details */}
-        <div className="bg-black/30 p-4 rounded-lg w-full ">
+        <div className="bg-black/50 p-4 rounded-lg w-full ">
 
           {/* Email */}
           <div className="mb-4">
@@ -102,9 +100,7 @@ const Home = () => {
       <div
         className="w-3/4 p-6 ml-6 rounded-lg relative"
         style={{
-          backgroundImage: 'url(https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches_53876-129736.jpg?t=st=1725286755~exp=1725290355~hmac=af1f8298c90775e48c2344a07d08b4ed25f29c8a07b9ea7014c8cd848f69882d&w=1480)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          background: 'linear-gradient(to bottom right, #000000, #6a0dad)', // Black and purple gradient
         }}
       >
         {/* Top-right Navigation */}
@@ -112,31 +108,31 @@ const Home = () => {
           <div className="flex space-x-4">
             <button
               onClick={() => handleSectionChange('About')}
-              className={`px-4 py-2 rounded-full  bg-black/30  ${currentSection === 'About' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              className={`px-4 py-2 rounded-full  bg-black/50 hover:bg-violet-900 ${currentSection === 'About' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               About
             </button>
             <button
               onClick={() => handleSectionChange('Resume')}
-              className={`px-4 py-2 rounded-full  bg-black/30  ${currentSection === 'Resume' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              className={`px-4 py-2 rounded-full  bg-black/50 hover:bg-violet-900 ${currentSection === 'Resume' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               Education
             </button>
             <button
               onClick={() => handleSectionChange('Portfolio')}
-              className={`px-4 py-2 rounded-full  bg-black/30   ${currentSection === 'Portfolio' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              className={`px-4 py-2 rounded-full  bg-black/50 hover:bg-violet-900  ${currentSection === 'Portfolio' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               Portfolio
             </button>
             <button
               onClick={() => handleSectionChange('Blog')}
-              className={`px-4 py-2 rounded-full  bg-black/30 ${currentSection === 'Blog' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              className={`px-4 py-2 rounded-full  bg-black/50 hover:bg-violet-900 ${currentSection === 'Blog' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               Blog
             </button>
             <button
               onClick={() => handleSectionChange('Contact')}
-              className={`px-4 py-2 rounded-full bg-black/30  ${currentSection === 'Contact' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
+              className={`px-4 py-2 rounded-full bg-black/50 hover:bg-violet-90  hover:bg-violet-900 ${currentSection === 'Contact' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 font-courier-prime`}
             >
               Contact
             </button>

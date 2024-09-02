@@ -56,7 +56,7 @@ const About = () => {
       {/* Skill Boxes Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         {/* Box 1: Web Design */}
-        <div className="bg-black/30 p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
+        <div className="bg-black/50 p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
           <FaPaintBrush className="text-amber-500 text-5xl mb-3" />
           <h3 className="text-white text-2xl mb-2">Web Design</h3>
           <p className="text-gray-400 text-sm">
@@ -67,7 +67,7 @@ const About = () => {
         </div>
 
         {/* Box 2: Web Development */}
-        <div className="bg-black/30  p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
+        <div className="bg-black/50  p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
           <FaLaptopCode className="text-amber-500 text-5xl mb-3" />
           <h3 className="text-white text-2xl mb-2">Web Development</h3>
           <p className="text-gray-400 text-sm">
@@ -78,7 +78,7 @@ const About = () => {
         </div>
 
         {/* Box 3: Software Development */}
-        <div className="bg-black/30  p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
+        <div className="bg-black/50  p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
           <FaCode className="text-amber-500 text-5xl mb-3" />
           <h3 className="text-white text-2xl  mb-2">Software Development</h3>
           <p className="text-gray-400 text-sm">
@@ -89,7 +89,7 @@ const About = () => {
         </div>
 
         {/* Box 4: Front-End */}
-        <div className="bg-black/30  p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
+        <div className="bg-black/50  p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime ">
           <FaCogs className="text-amber-500 text-5xl mb-3" />
           <h3 className="text-white text-2xl  mb-2">Front-End</h3>
           <p className="text-gray-400 text-sm">
