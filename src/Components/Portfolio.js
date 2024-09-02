@@ -96,14 +96,14 @@ const Portfolio = () => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-card block bg-purple-800/50 rounded-lg overflow-hidden"
+            className="relative block bg-purple-800/50 rounded-lg overflow-hidden group project-card"
           >
             <img
               src={project.image}
               alt={project.title}
-              className="font-bold w-full h-48 object-cover font-courier-prime "
+              className="w-full h-48 object-cover"
             />
-            <div className="p-4">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
               <h3 className="font-semibold mb-2 text-xl text-amber-400">{project.title}</h3>
               <p>{project.description}</p>
             </div>
