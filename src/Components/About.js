@@ -199,13 +199,13 @@ const About = () => {
       <HorizontalTechStack
         percentage={85}
         title="C"
-        description="Proficient in using C for system programming and developing efficient algorithms."
+        description="Proficient in using C."
         
       />
       <HorizontalTechStack
         percentage={50}
         title="C++"
-        description="Experienced in using C++ for object-oriented programming, game development, and performance-critical applications."
+        description="Experienced in using C++."
         
       />
     </div>
