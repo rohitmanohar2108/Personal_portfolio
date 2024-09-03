@@ -54,13 +54,13 @@ const Home = () => {
           className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-purple-700"
         />
 
-        <h2 className="text-white text-2xl mb-2 font-acme">
+        <h2 className="text-white text-3xl mb-2 font-acme">
           Rohit Manohar
         </h2>
         <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-roboto">
           Software Engineer
         </div>
-        <div className="bg-purple-700/50 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-acme shadow-md shadow-purple-400 transition-transform transform hover:scale-105">
+        <div className="bg-purple-700/50 hover:bg-violet-900 text-white cursor-pointer text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-400 font-acme shadow-md shadow-purple-400 transition-transform transform hover:scale-105">
           <a href="#" target="_blank" rel="noopener noreferrer" className="">
             View Resume
           </a>
@@ -125,25 +125,25 @@ const Home = () => {
           <div className="flex space-x-4">
             <button
               onClick={() => handleSectionChange("About")}
-              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
-                currentSection === "About" ? "text-amber-500" : "text-gray-300"
+              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
+                currentSection === "About" ? "text-amber-400" : "text-gray-300"
               } hover:text-amber-400 font-roboto`}
             >
               About
             </button>
             <button
               onClick={() => handleSectionChange("Resume")}
-              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
-                currentSection === "Resume" ? "text-amber-500" : "text-gray-300"
+              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
+                currentSection === "Resume" ? "text-amber-400" : "text-gray-300"
               } hover:text-amber-400 font-roboto`}
             >
               Education
             </button>
             <button
               onClick={() => handleSectionChange("Portfolio")}
-              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
+              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
                 currentSection === "Portfolio"
-                  ? "text-amber-500"
+                  ? "text-amber-400"
                   : "text-gray-300"
               } hover:text-amber-400 font-roboto`}
             >
@@ -151,17 +151,17 @@ const Home = () => {
             </button>
             <button
               onClick={() => handleSectionChange("Blog")}
-              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
-                currentSection === "Blog" ? "text-amber-500" : "text-gray-300"
+              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
+                currentSection === "Blog" ? "text-amber-400" : "text-gray-300"
               } hover:text-amber-400 font-roboto`}
             >
               Blog
             </button>
             <button
               onClick={() => handleSectionChange("Contact")}
-              className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-90  hover:bg-violet-900 text-sm ${
+              className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-90  hover:bg-violet-900 text-base ${
                 currentSection === "Contact"
-                  ? "text-amber-500"
+                  ? "text-amber-400"
                   : "text-gray-300"
               } hover:text-amber-400 font-roboto`}
             >

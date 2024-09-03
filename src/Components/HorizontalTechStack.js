@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
-const HorizontalTechStack = ({ percentage, title, description }) => {
+const HorizontalTechStack = ({ percentage = 50, title = "Tech Stack", description = "", barColor = "bg-amber-400" }) => {
   const barRef = useRef(null);
-  const containerRef = useRef(null); // Reference to the container div
-  const titleRef = useRef(null); // Reference to the title element
-  const descriptionRef = useRef(null); // Reference to the description element
-  const [inView, setInView] = useState(false); // State to track if the component is in view
+  const containerRef = useRef(null);
+  const titleRef = useRef(null);
+  const descriptionRef = useRef(null);
+  const [inView, setInView] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,7 +32,6 @@ const HorizontalTechStack = ({ percentage, title, description }) => {
 
   useEffect(() => {
     if (inView) {
-      // Animate the progress bar width
       gsap.fromTo(
         barRef.current,
         { width: "0%" },
@@ -43,7 +42,6 @@ const HorizontalTechStack = ({ percentage, title, description }) => {
         }
       );
 
-      // Animate the title
       gsap.from(titleRef.current, {
         opacity: 0,
         x: -20,
@@ -52,7 +50,6 @@ const HorizontalTechStack = ({ percentage, title, description }) => {
         ease: "power2.out",
       });
 
-      // Animate the description
       gsap.from(descriptionRef.current, {
         opacity: 0,
         x: 20,
@@ -64,14 +61,15 @@ const HorizontalTechStack = ({ percentage, title, description }) => {
   }, [inView, percentage]);
 
   return (
-    <div className="mb-3" ref={containerRef}>
+    <div className="mb-3 bg-black/30 p-4 rounded-lg shadow-md" ref={containerRef}>
       <h3 className="text-white text-3xl font-acme" ref={titleRef}>
         {title}
       </h3>
-      <div className="w-72 bg-gray-700 h-2 mt-4 rounded-lg overflow-hidden">
+      <div className="w-full bg-white h-2 mt-4 rounded-lg overflow-hidden">
         <div
-          className="bg-amber-400 h-2 rounded-lg"
+          className={`h-2 rounded-lg ${barColor}`}
           ref={barRef}
+          aria-label={`Progress bar showing ${percentage}%`}
         ></div>
       </div>
       <p className="text-gray-400 text-sm mt-2 font-roboto" ref={descriptionRef}>

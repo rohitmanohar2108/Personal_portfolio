@@ -31,7 +31,7 @@ const About = () => {
         <FcAbout className="text-4xl ml-4 text-white" />
       </div>
 
-      <hr className="w-32 border-2 border-yellow-600 mb-6 mt-3 rounded-full about-header" />
+      <hr className="w-32 border-2 border-amber-400 mb-6 mt-3 rounded-full about-header" />
 
       <p className="text-white text-base font-roboto">
         I am a Computer Science Student at NITK. I have a deep passion for

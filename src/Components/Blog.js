@@ -16,7 +16,7 @@ const Blog = () => {
       {/* Main Content */}
       <div className="flex-1 p-6">
         <h1 className="text-white text-4xl font-acme mb-6 -mt-6 -mx-3">Blog</h1>
-        <hr className="w-32 border-2 border-yellow-600 mb-6 -mx-5 -my-4 rounded-full" />
+        <hr className="w-32 border-2 border-amber-400 mb-6 -mx-5 -my-4 rounded-full" />
 
         <p className="text-gray-300 mb-6 font-roboto text-lg">
           Welcome to my blog where I share insights on various topics ranging from technology to personal growth. Explore my latest posts and find something that interests you!

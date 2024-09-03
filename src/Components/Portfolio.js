@@ -81,7 +81,7 @@ const Portfolio = () => {
   return (
     <div>
       <h1 className="text-white text-3xl mb-4 font-acme">Portfolio</h1>
-      <hr className="w-32 border-2 border-yellow-600 mb-6 -mx-2 -my-2 rounded-full" />
+      <hr className="w-32 border-2 border-amber-400 mb-6 -mx-2 -my-2 rounded-full" />
       <div className="flex space-x-4 mb-8">
         <button
           onClick={() => setActiveTab('All')}
