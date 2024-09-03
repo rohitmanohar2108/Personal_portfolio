@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import {
   FaEnvelope,
   FaPhone,
-  FaMapMarkerAlt,
   FaBirthdayCake,
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
 } from "react-icons/fa";
 import About from "./About";
 import Resume from "./Resume";
@@ -54,9 +57,7 @@ const Home = () => {
           className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-purple-700"
         />
 
-        <h2 className="text-white text-3xl mb-2 font-acme">
-          Rohit Manohar
-        </h2>
+        <h2 className="text-white text-3xl mb-2 font-acme">Rohit Manohar</h2>
         <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-400 font-roboto">
           Software Engineer
         </div>
@@ -104,12 +105,37 @@ const Home = () => {
             <p className="text-gray-400 mb-1 font-acme">Location</p>
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-amber-500 mr-2" size={20} />
-              <p className="text-white font-roboto text-sm">
-                Surathkal, India
-              </p>
+              <p className="text-white font-roboto text-sm">Surathkal, India</p>
             </div>
           </div>
+          
         </div>
+        <div className="flex space-x-4 mt-4">
+            <a
+              href="https://www.linkedin.com/in/rohit-manohar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300"
+            >
+              <FaLinkedin size={24} />
+            </a>
+            <a
+              href="https://www.instagram.com/rohit_manohar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300"
+            >
+              <FaInstagram size={24} />
+            </a>
+            <a
+              href="https://twitter.com/rohit_manohar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300"
+            >
+              <FaTwitter size={24} />
+            </a>
+          </div>
       </div>
 
       {/* Right Column */}
