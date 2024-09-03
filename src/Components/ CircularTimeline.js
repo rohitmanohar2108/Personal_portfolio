@@ -47,6 +47,7 @@ const CircularTimeline = ({ percentage, title, description }) => {
           strokeDashoffset: offset,
           duration: 2,
           ease: "power2.out",
+          
         }
       );
 
