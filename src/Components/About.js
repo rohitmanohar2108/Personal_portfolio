@@ -182,7 +182,11 @@ const About = () => {
         title="React"
         description="Experienced in building responsive web applications with React."
       />
-      {/* Add more HorizontalTechStack components as needed */}
+      <HorizontalTechStack
+        percentage={85}
+        title="React"
+        description="Experienced in building responsive web applications with React."
+      />
     </div>
       <h2 className="text-amber-400 text-4xl mt-8 font-extrabold font-acme">
         Certifications
