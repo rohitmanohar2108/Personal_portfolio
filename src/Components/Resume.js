@@ -20,7 +20,7 @@ const Resume = () => {
       {/* Header Section */}
       <div className="mb-6 -mt-20 -mx-6 resume-header">
         <h1 className="text-white text-3xl font-acme">Resume</h1>
-        <hr className="w-32 border-2 border-amber-400 mb-6 mt-3 rounded-full" />
+        <hr className="w-32 border-2 border-amber-400 mb-6 mt-2 rounded-full" />
       </div>
 
       {/* Education Section */}

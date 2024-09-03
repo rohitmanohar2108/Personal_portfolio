@@ -57,7 +57,7 @@ const Home = () => {
         <h2 className="text-white text-3xl mb-2 font-acme">
           Rohit Manohar
         </h2>
-        <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-roboto">
+        <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-400 font-roboto">
           Software Engineer
         </div>
         <div className="bg-purple-700/50 hover:bg-violet-900 text-white cursor-pointer text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-400 font-acme shadow-md shadow-purple-400 transition-transform transform hover:scale-105">

@@ -51,6 +51,34 @@
     font-weight: bold;
   }
   /* Parent container should have perspective for 3D effect */
+  /* styles.css */
+
+.profile-container {
+  perspective: 1000px; /* Adds depth to the 3D effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for demonstration */
+}
+
+.profile-photo {
+  width: 240px; /* Adjust size as needed */
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px double #6D28D9; /* Purple border */
+  transition: transform 0.1s; /* Smooth transition for tilting effect */
+}
+
+.profile-photo:hover {
+  --tilt-x: 10deg; /* Maximum tilt on X axis */
+  --tilt-y: 10deg; /* Maximum tilt on Y axis */
+}
+
+.profile-container:hover .profile-photo {
+  transform: rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+}
+
   
     
 
