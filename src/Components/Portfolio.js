@@ -80,30 +80,30 @@ const Portfolio = () => {
 
   return (
     <div>
-      <h1 className="text-white text-3xl mb-4">Portfolio</h1>
+      <h1 className="text-white text-3xl mb-4 font-acme">Portfolio</h1>
       <hr className="w-32 border-2 border-yellow-600 mb-6 -mx-2 -my-2 rounded-full" />
       <div className="flex space-x-4 mb-8">
         <button
           onClick={() => setActiveTab('All')}
-          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'All' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 transition-colors duration-300 font-courier-prime`}
+          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'All' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 transition-colors duration-300 font-roboto`}
         >
           All
         </button>
         <button
           onClick={() => setActiveTab('Web Development')}
-          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Development' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 transition-colors duration-300 font-courier-prime`}
+          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Development' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 transition-colors duration-300 font-roboto`}
         >
           Web Development
         </button>
         <button
           onClick={() => setActiveTab('Web Design')}
-          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Design' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 transition-colors duration-300 font-courier-prime`}
+          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Design' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 transition-colors duration-300 font-roboto`}
         >
           Web Design
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300 font-courier-prime">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300">
         {projects[activeTab].map(project => (
           <a
             key={project.id}
@@ -118,7 +118,7 @@ const Portfolio = () => {
               className="w-full h-48 object-cover"
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-              <h3 className="font-semibold mb-2 text-xl text-amber-400">{project.title}</h3>
+              <h3 className="font-bold mb-2 text-3xl text-amber-400 font-acme">{project.title}</h3>
               <p>{project.description}</p>
             </div>
           </a>

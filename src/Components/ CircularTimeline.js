@@ -125,13 +125,13 @@ const CircularTimeline = ({ percentage, title, description }) => {
         ></div>
       </div>
       <h3
-        className="text-white text-2xl mt-4 font-courier-prime"
+        className="text-white text-3xl mt-4 font-acme"
         ref={titleRef}
       >
         {title}
       </h3>
       <p
-        className="text-gray-400 text-sm font-courier-prime"
+        className="text-gray-400 text-sm font-roboto"
         ref={descriptionRef}
       >
         {description}

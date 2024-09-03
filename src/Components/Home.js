@@ -54,13 +54,13 @@ const Home = () => {
           className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-purple-700"
         />
 
-        <h2 className="text-white text-2xl mb-2 font-courier-prime">
+        <h2 className="text-white text-2xl mb-2 font-acme">
           Rohit Manohar
         </h2>
-        <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-courier-prime">
+        <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-roboto">
           Software Engineer
         </div>
-        <div className="bg-purple-700/50 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-courier-prime shadow-md shadow-purple-400 transition-transform transform hover:scale-105">
+        <div className="bg-purple-700/50 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-500 font-acme shadow-md shadow-purple-400 transition-transform transform hover:scale-105">
           <a href="#" target="_blank" rel="noopener noreferrer" className="">
             View Resume
           </a>
@@ -73,10 +73,10 @@ const Home = () => {
         <div className="bg-purple-800/50 p-4 rounded-lg w-full ">
           {/* Email */}
           <div className="mb-4">
-            <p className="text-gray-400 mb-1 font-courier-prime">Email</p>
+            <p className="text-gray-400 mb-1 font-acme">Email</p>
             <div className="flex items-center">
               <FaEnvelope className=" mr-2 text-amber-500" size={20} />
-              <p className="text-white font-courier-prime text-sm">
+              <p className="text-white font-roboto text-sm">
                 rohit@example.com
               </p>
             </div>
@@ -84,7 +84,7 @@ const Home = () => {
 
           {/* Phone */}
           <div className="mb-4">
-            <p className="text-gray-400 mb-1 font-courier-prime">Phone</p>
+            <p className="text-gray-400 mb-1 font-acme">Phone</p>
             <div className="flex items-center">
               <FaPhone className="text-amber-500 mr-2" size={20} />
               <p className="text-white  text-sm">+123 456 7890</p>
@@ -92,7 +92,7 @@ const Home = () => {
           </div>
 
           <div className="mb-4">
-            <p className="text-gray-400 mb-1 font-courier-prime">Birthday</p>
+            <p className="text-gray-400 mb-1 font-acme">Birthday</p>
             <div className="flex items-center">
               <FaBirthdayCake className="text-amber-500 mr-2" size={20} />
               <p className="text-white text-sm">21-08-2004</p>
@@ -101,10 +101,10 @@ const Home = () => {
 
           {/* Location */}
           <div>
-            <p className="text-gray-400 mb-1 font-courier-prime">Location</p>
+            <p className="text-gray-400 mb-1 font-acme">Location</p>
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-amber-500 mr-2" size={20} />
-              <p className="text-white font-courier-prime text-sm">
+              <p className="text-white font-roboto text-sm">
                 Surathkal, India
               </p>
             </div>
@@ -127,7 +127,7 @@ const Home = () => {
               onClick={() => handleSectionChange("About")}
               className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
                 currentSection === "About" ? "text-amber-500" : "text-gray-300"
-              } hover:text-amber-400 font-courier-prime`}
+              } hover:text-amber-400 font-roboto`}
             >
               About
             </button>
@@ -135,7 +135,7 @@ const Home = () => {
               onClick={() => handleSectionChange("Resume")}
               className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
                 currentSection === "Resume" ? "text-amber-500" : "text-gray-300"
-              } hover:text-amber-400 font-courier-prime`}
+              } hover:text-amber-400 font-roboto`}
             >
               Education
             </button>
@@ -145,7 +145,7 @@ const Home = () => {
                 currentSection === "Portfolio"
                   ? "text-amber-500"
                   : "text-gray-300"
-              } hover:text-amber-400 font-courier-prime`}
+              } hover:text-amber-400 font-roboto`}
             >
               Portfolio
             </button>
@@ -153,7 +153,7 @@ const Home = () => {
               onClick={() => handleSectionChange("Blog")}
               className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-sm ${
                 currentSection === "Blog" ? "text-amber-500" : "text-gray-300"
-              } hover:text-amber-400 font-courier-prime`}
+              } hover:text-amber-400 font-roboto`}
             >
               Blog
             </button>
@@ -163,7 +163,7 @@ const Home = () => {
                 currentSection === "Contact"
                   ? "text-amber-500"
                   : "text-gray-300"
-              } hover:text-amber-400 font-courier-prime`}
+              } hover:text-amber-400 font-roboto`}
             >
               Contact
             </button>

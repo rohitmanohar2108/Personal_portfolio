@@ -26,7 +26,7 @@ const About = () => {
   return (
     <div>
       <div className="flex items-center">
-        <h1 className="text-white text-3xl font-courier-prime about-header">
+        <h1 className="text-white text-3xl font-acme about-header">
           About Me
         </h1>
         <FcAbout className="text-4xl ml-4 text-white" />
@@ -35,7 +35,7 @@ const About = () => {
       <hr className="w-32 border-2 border-yellow-600 mb-6 mt-3 rounded-full about-header" />
       
 
-      <p className="text-white text-sm font-courier-prime">
+      <p className="text-white text-base font-roboto">
         I am a Computer Science Student at NITK. I have a deep passion for
         coding and constantly strive to enhance my skills by learning new
         technologies. I love tackling challenging problems and finding
@@ -44,7 +44,7 @@ const About = () => {
         projects and learn from others in the field.
       </p>
 
-      <p className="text-white text-sm mt-4 font-courier-prime">
+      <p className="text-white text-base mt-4 font-roboto">
         When I am not coding, I enjoy exploring the latest tech trends and
         participating in hackathons and coding competitions. Let's connect and
         create something amazing together! Whether it's building a new app,
@@ -53,14 +53,14 @@ const About = () => {
         tech community.
       </p>
 
-      <h2 className="text-amber-400 text-4xl mt-4 font-extrabold font-courier-prime">
+      <h2 className="text-amber-400 text-4xl mt-4 font-extrabold font-acme">
         What I'm Doing
       </h2>
 
       {/* Skill Boxes Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         {/* Box 1: Web Design */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-acme group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -71,8 +71,8 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaPaintBrush className="text-amber-500 text-5xl mb-3" />
-            <h3 className="text-white text-2xl mb-2">Web Design</h3>
-            <p className="text-white text-sm">
+            <h3 className="text-white text-3xl mb-2 font-acme">Web Design</h3>
+            <p className="text-white text-sm font-roboto">
               Creating visually appealing designs and user interfaces for
               websites. Expertise in UI/UX principles, responsive design, and
               modern design tools.
@@ -81,7 +81,7 @@ const About = () => {
         </div>
 
         {/* Box 2: Web Development */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-acme group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -92,8 +92,8 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaLaptopCode className="text-amber-500 text-5xl mb-3" />
-            <h3 className="text-white text-2xl mb-2">Web Development</h3>
-            <p className="text-white text-sm">
+            <h3 className="text-white text-3xl mb-2 font-acme">Web Development</h3>
+            <p className="text-white text-sm font-roboto">
               Building and maintaining websites using various technologies such
               as HTML, CSS, JavaScript, and frameworks like React. Focus on
               performance and scalability.
@@ -102,7 +102,7 @@ const About = () => {
         </div>
 
         {/* Box 3: Software Development */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-acme group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -113,8 +113,8 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
             <FaCode className="text-amber-500 text-5xl mb-3" />
-            <h3 className="text-white text-2xl mb-2">Software Development</h3>
-            <p className="text-white text-sm">
+            <h3 className="text-white text-3xl mb-2 font-acme" >Software Development</h3>
+            <p className="text-white text-sm font-roboto">
               Developing software solutions with a focus on algorithms, data
               structures, and code optimization. Proficient in languages like
               Java and C++.
@@ -123,7 +123,7 @@ const About = () => {
         </div>
 
         {/* Box 4: Front-End */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-courier-prime group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-acme group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -134,8 +134,8 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaCogs className="text-amber-500 text-5xl mb-3" />
-            <h3 className="text-white text-2xl mb-2">Front-End</h3>
-            <p className="text-white text-sm">
+            <h3 className="text-white text-3xl mb-2 font-acme">Front-End</h3>
+            <p className="text-white text-sm font-roboto">
               Specializing in creating interactive and dynamic user interfaces.
               Experienced with frameworks such as React, ensuring a smooth and
               engaging user experience.
@@ -143,7 +143,7 @@ const About = () => {
           </div>
         </div>
 
-        <p className="text-amber-400 text-4xl mt-4 font-extrabold font-courier-prime">
+        <p className="text-amber-400 text-4xl mt-4 font-extrabold font-acme">
           My Skills
         </p>
       </div>
@@ -170,7 +170,7 @@ const About = () => {
           description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
         />
       </div>
-      <h2 className="text-amber-400 text-4xl mt-8 font-extrabold font-courier-prime">
+      <h2 className="text-amber-400 text-4xl mt-8 font-extrabold font-acme">
         Certifications
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">

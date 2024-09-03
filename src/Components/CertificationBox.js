@@ -7,7 +7,7 @@ const CertificationBox = ({ logo, title, description, link }) => {
       href={link} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="relative p-6 rounded-lg flex flex-col items-center text-center certification-box font-courier-prime group overflow-hidden bg-white bg-opacity-30 transition-transform transform hover:scale-105"
+      className="relative p-6 rounded-lg flex flex-col items-center text-center certification-box font-acme group overflow-hidden bg-white bg-opacity-30 transition-transform transform hover:scale-105"
     >
       <div className="relative w-full h-24 mb-4">
         <img

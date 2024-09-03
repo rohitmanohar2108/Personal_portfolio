@@ -8,7 +8,8 @@ module.exports = {
       fontFamily: {
         'nano': ['"Nano Sans"', 'sans-serif'],
         'courier-prime': ['Courier Prime', 'monospace'],
-        
+        'acme': ['"Acme"', 'sans-serif'], // Added Acme font
+        'roboto': ['"Roboto"', 'sans-serif'],
       },
     },
   },
