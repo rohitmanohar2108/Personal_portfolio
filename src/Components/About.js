@@ -48,7 +48,7 @@ const About = () => {
 
       <p className="text-white text-base mt-4 font-roboto">
         When I am not coding, I enjoy exploring the latest tech trends and
-        participating in hackathons and coding competitions. Let's connect and
+        participating in coding competitions. Let's connect and
         create something amazing together! Whether it's building a new app,
         diving into a complex algorithm, or simply exchanging knowledge, I am
         excited to engage with like-minded individuals and contribute to the
