@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect  } from "react";
 import { gsap } from "gsap";
 import { FaCode, FaPaintBrush, FaCogs, FaLaptopCode } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
@@ -8,6 +8,8 @@ import HorizontalTechStack from "./HorizontalTechStack";
 
 
 const About = () => {
+  
+
   useEffect(() => {
     // Animate the header and paragraphs
     gsap.fromTo(
@@ -23,6 +25,8 @@ const About = () => {
       { opacity: 1, y: 0, duration: 1, delay: 0.5, stagger: 0.2 }
     );
   }, []);
+
+ ;
 
   return (
     <div>
