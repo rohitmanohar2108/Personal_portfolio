@@ -70,13 +70,14 @@
   transition: transform 0.1s; /* Smooth transition for tilting effect */
 }
 
-.profile-photo:hover {
-  --tilt-x: 10deg; /* Maximum tilt on X axis */
-  --tilt-y: 10deg; /* Maximum tilt on Y axis */
-}
 
-.profile-container:hover .profile-photo {
-  transform: rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+
+/* styles.css */
+
+.underline-custom {
+  text-decoration: underline;
+  text-decoration-color: #F59E0B; /* Custom color for the underline */
+  text-decoration-thickness: 2px; /* Adjust thickness */
 }
 
   
