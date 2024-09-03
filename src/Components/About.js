@@ -4,7 +4,7 @@ import { FaCode, FaPaintBrush, FaCogs, FaLaptopCode } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
 import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
-
+import HorizontalTechStack from "./HorizontalTechStack";
 
 const About = () => {
   useEffect(() => {
@@ -26,14 +26,11 @@ const About = () => {
   return (
     <div>
       <div className="flex items-center">
-        <h1 className="text-white text-3xl font-acme about-header">
-          About Me
-        </h1>
+        <h1 className="text-white text-3xl font-acme about-header">About Me</h1>
         <FcAbout className="text-4xl ml-4 text-white" />
       </div>
 
       <hr className="w-32 border-2 border-yellow-600 mb-6 mt-3 rounded-full about-header" />
-      
 
       <p className="text-white text-base font-roboto">
         I am a Computer Science Student at NITK. I have a deep passion for
@@ -92,7 +89,9 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaLaptopCode className="text-amber-500 text-5xl mb-3" />
-            <h3 className="text-white text-3xl mb-2 font-acme">Web Development</h3>
+            <h3 className="text-white text-3xl mb-2 font-acme">
+              Web Development
+            </h3>
             <p className="text-white text-sm font-roboto">
               Building and maintaining websites using various technologies such
               as HTML, CSS, JavaScript, and frameworks like React. Focus on
@@ -113,7 +112,9 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
             <FaCode className="text-amber-500 text-5xl mb-3" />
-            <h3 className="text-white text-3xl mb-2 font-acme" >Software Development</h3>
+            <h3 className="text-white text-3xl mb-2 font-acme">
+              Software Development
+            </h3>
             <p className="text-white text-sm font-roboto">
               Developing software solutions with a focus on algorithms, data
               structures, and code optimization. Proficient in languages like
@@ -170,6 +171,19 @@ const About = () => {
           description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
         />
       </div>
+      <div>
+      <HorizontalTechStack
+        percentage={75}
+        title="JavaScript"
+        description="Proficient in modern JavaScript ES6+ features."
+      />
+      <HorizontalTechStack
+        percentage={85}
+        title="React"
+        description="Experienced in building responsive web applications with React."
+      />
+      {/* Add more HorizontalTechStack components as needed */}
+    </div>
       <h2 className="text-amber-400 text-4xl mt-8 font-extrabold font-acme">
         Certifications
       </h2>
