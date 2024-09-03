@@ -6,6 +6,7 @@ import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
 
+
 const About = () => {
   useEffect(() => {
     // Animate the header and paragraphs
@@ -171,21 +172,37 @@ const About = () => {
           description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
         />
       </div>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
       <HorizontalTechStack
-        percentage={75}
+        percentage={50}
+       
         title="JavaScript"
         description="Proficient in modern JavaScript ES6+ features."
+        iconClass="javascript-plain"
       />
       <HorizontalTechStack
         percentage={85}
         title="React"
         description="Experienced in building responsive web applications with React."
+       
       />
       <HorizontalTechStack
         percentage={85}
-        title="React"
-        description="Experienced in building responsive web applications with React."
+        title="TailwindCSS"
+        description="Experienced in building responsive web applications with TailwindCSS for modern, utility-first styling."
+        
+      />
+      <HorizontalTechStack
+        percentage={85}
+        title="C"
+        description="Proficient in using C for system programming and developing efficient algorithms."
+        
+      />
+      <HorizontalTechStack
+        percentage={50}
+        title="C++"
+        description="Experienced in using C++ for object-oriented programming, game development, and performance-critical applications."
+        
       />
     </div>
       <h2 className="text-amber-400 text-4xl mt-8 font-extrabold font-acme">
