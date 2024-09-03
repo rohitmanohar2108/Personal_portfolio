@@ -42,6 +42,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-black flex p-6">
+      
       {/* Left Column */}
       <div
         className="w-1/4 p-6 rounded-lg flex flex-col items-center"
@@ -52,7 +53,7 @@ const Home = () => {
       >
         {/* Profile Photo */}
         <img
-          src="https://as1.ftcdn.net/v2/jpg/05/90/59/88/1000_F_590598870_TOcGd4cUZzPoEMlxSc7XYwcupHOE0vLM.jpg" // Replace with your actual profile photo URL
+          src="https://media-sin6-3.cdn.whatsapp.net/v/t61.24694-24/453603651_520834290411384_6429731950094255849_n.jpg?ccb=11-4&oh=01_Q5AaILKhYIrPaCdMCVYP6V67v8Jv_qHL0yDjTv0_d5FyyYvu&oe=66E4347F&_nc_sid=5e03e0&_nc_cat=102" // Replace with your actual profile photo URL
           alt="Profile"
           className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-purple-700"
         />
