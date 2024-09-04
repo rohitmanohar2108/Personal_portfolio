@@ -149,53 +149,50 @@ const Home = () => {
       >
         {/* Top-right Navigation */}
         <div className="absolute top-0 right-0 mt-4 mr-4">
-          <div className="flex space-x-4">
-            <button
-              onClick={() => handleSectionChange("About")}
-              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
-                currentSection === "About" ? "text-amber-400" : "text-white"
-              } hover:text-amber-400 font-roboto`}
-            >
-              About
-            </button>
-            <button
-              onClick={() => handleSectionChange("Resume")}
-              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
-                currentSection === "Resume" ? "text-amber-400" : "text-white"
-              } hover:text-amber-400 font-roboto`}
-            >
-              Education
-            </button>
-            <button
-              onClick={() => handleSectionChange("Portfolio")}
-              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
-                currentSection === "Portfolio"
-                  ? "text-amber-400"
-                  : "text-white"
-              } hover:text-amber-400 font-roboto`}
-            >
-              Portfolio
-            </button>
-            <button
-              onClick={() => handleSectionChange("Blog")}
-              className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
-                currentSection === "Blog" ? "text-amber-400" : "text-white"
-              } hover:text-amber-400 font-roboto`}
-            >
-              Blog
-            </button>
-            <button
-              onClick={() => handleSectionChange("Contact")}
-              className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-90  hover:bg-violet-900 text-base ${
-                currentSection === "Contact"
-                  ? "text-amber-400"
-                  : "text-white"
-              } hover:text-amber-400 font-roboto`}
-            >
-              Contact
-            </button>
-          </div>
-        </div>
+  <div className="flex space-x-4">
+    <button
+      onClick={() => handleSectionChange("About")}
+      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+        currentSection === "About" ? "text-amber-400" : "text-white"
+      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+    >
+      About
+    </button>
+    <button
+      onClick={() => handleSectionChange("Resume")}
+      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+        currentSection === "Resume" ? "text-amber-400" : "text-white"
+      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+    >
+      Education
+    </button>
+    <button
+      onClick={() => handleSectionChange("Portfolio")}
+      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+        currentSection === "Portfolio" ? "text-amber-400" : "text-white"
+      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+    >
+      Portfolio
+    </button>
+    <button
+      onClick={() => handleSectionChange("Blog")}
+      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+        currentSection === "Blog" ? "text-amber-400" : "text-white"
+      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+    >
+      Blog
+    </button>
+    <button
+      onClick={() => handleSectionChange("Contact")}
+      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+        currentSection === "Contact" ? "text-amber-400" : "text-white"
+      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+    >
+      Contact
+    </button>
+  </div>
+</div>
+
 
         {/* Right Column Content */}
         {renderContent()}
