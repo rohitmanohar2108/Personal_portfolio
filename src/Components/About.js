@@ -1,4 +1,4 @@
-import React, { useEffect  } from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { FaCode, FaPaintBrush, FaCogs, FaLaptopCode } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
@@ -6,10 +6,7 @@ import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
 
-
 const About = () => {
-  
-
   useEffect(() => {
     // Animate the header and paragraphs
     gsap.fromTo(
@@ -26,8 +23,6 @@ const About = () => {
     );
   }, []);
 
- ;
-
   return (
     <div>
       <div className="flex items-center">
@@ -36,6 +31,49 @@ const About = () => {
       </div>
 
       <hr className="w-32 border-2 border-amber-400 mb-6 mt-3 rounded-full about-header" />
+
+      <div class="behind-content">
+  <div class="text-overlay">
+    <div class="font-acme text-9xl mt-60">
+      Hi There!
+    </div>
+  </div>
+</div>
+
+<div class="mockup mockup-macbook loaded opened ml-36 mb-8">
+  <div class="part top">
+    <img
+      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
+      alt=""
+      class="top"
+    />
+    <img
+      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+      alt=""
+      class="cover"
+    />
+
+    <video autoplay>
+      <source
+        src="https://d1xm195wioio0k.cloudfront.net/images/video/support.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+  <div class="part bottom">
+    <img
+      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+      alt=""
+      class="cover"
+    />
+    <img
+      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg"
+      alt=""
+      class="bottom"
+    />
+  </div>
+</div>
+
 
       <p className="text-white text-base font-roboto">
         I am a Computer Science Student at NITK. I have a deep passion for
@@ -48,11 +86,10 @@ const About = () => {
 
       <p className="text-white text-base mt-4 font-roboto">
         When I am not coding, I enjoy exploring the latest tech trends and
-        participating in coding competitions. Let's connect and
-        create something amazing together! Whether it's building a new app,
-        diving into a complex algorithm, or simply exchanging knowledge, I am
-        excited to engage with like-minded individuals and contribute to the
-        tech community.
+        participating in coding competitions. Let's connect and create something
+        amazing together! Whether it's building a new app, diving into a complex
+        algorithm, or simply exchanging knowledge, I am excited to engage with
+        like-minded individuals and contribute to the tech community.
       </p>
 
       <h2 className="text-amber-400 text-4xl mt-4 font-extrabold font-acme">
@@ -177,38 +214,33 @@ const About = () => {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-      <HorizontalTechStack
-        percentage={50}
-       
-        title="JavaScript"
-        description="Proficient in modern JavaScript ES6+ features."
-        iconClass="javascript-plain"
-      />
-      <HorizontalTechStack
-        percentage={85}
-        title="React"
-        description="Experienced in building responsive web applications with React."
-       
-      />
-      <HorizontalTechStack
-        percentage={85}
-        title="TailwindCSS"
-        description="Experienced in building responsive web applications with TailwindCSS for modern, utility-first styling."
-        
-      />
-      <HorizontalTechStack
-        percentage={85}
-        title="C"
-        description="Proficient in using C."
-        
-      />
-      <HorizontalTechStack
-        percentage={50}
-        title="C++"
-        description="Experienced in using C++."
-        
-      />
-    </div>
+        <HorizontalTechStack
+          percentage={50}
+          title="JavaScript"
+          description="Proficient in modern JavaScript ES6+ features."
+          iconClass="javascript-plain"
+        />
+        <HorizontalTechStack
+          percentage={85}
+          title="React"
+          description="Experienced in building responsive web applications with React."
+        />
+        <HorizontalTechStack
+          percentage={85}
+          title="TailwindCSS"
+          description="Experienced in building responsive web applications with TailwindCSS for modern, utility-first styling."
+        />
+        <HorizontalTechStack
+          percentage={85}
+          title="C"
+          description="Proficient in using C."
+        />
+        <HorizontalTechStack
+          percentage={50}
+          title="C++"
+          description="Experienced in using C++."
+        />
+      </div>
       <h2 className="text-amber-400 text-4xl mt-8 font-extrabold font-acme">
         Certifications
       </h2>

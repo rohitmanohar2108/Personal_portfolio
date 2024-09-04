@@ -52,3 +52,114 @@
   }
   
   
+  
+  .container {
+    position: relative; /* Make the container a positioned element */
+    text-align: center;
+  }
+  
+  .behind-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: white; /* Adjust text color if needed */
+    font-size: 5rem; /* Adjust font size as needed */
+    text-align: center;
+    font-family: 'Acme', sans-serif; /* Ensure you have the Acme font loaded */
+  }
+  
+  /* Ensure the mockup is on top */
+  .mockup {
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  .mockup {
+    display: inline-block;
+    position: relative;
+    z-index: 3; /* Ensure the mockup is in front */
+    font-size: 0;
+    perspective: 2400px;
+    perspective-origin: 50% 100%;
+    opacity: 0;
+    transition: 500ms opacity;
+  }
+  
+  .mockup.loaded {
+    opacity: 1;
+  }
+  
+  .mockup .part .top,
+  .mockup .part .bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .mockup .part.top {
+    transform: translate3d(0, 0, 0) rotateX(-90deg);
+  }
+  
+  .mockup:hover .part.top {
+    transform: translate3d(0, 0, 0) rotateX(0deg);
+  }
+  
+  .mockup .part {
+    display: inline-block;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 50% 100%;
+    transition: 900ms;
+  }
+  
+  .mockup.opened .part .top {
+    transform: translate3d(0, 0, -11px) rotateX(90deg) scale(1, 1);
+  }
+  
+  .mockup .part .top {
+    transform-origin: 50% 0;
+    transform: translate3d(0, 0, -11px) rotateX(90deg);
+    transition: 900ms;
+  }
+  
+  .mockup img {
+    display: block;
+    max-width: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .mockup .part .cover {
+    position: relative;
+  }
+  
+  .mockup video {
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    width: 92%;
+    border-radius: 6px;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 1px);
+  }
+  
+  .mockup .part.bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0) rotateX(-90deg);
+  }
+  
+  .mockup .part .bottom {
+    transform-origin: 50% 0;
+    transform: translate3d(0,0,0) rotateX(90deg);
+  }
+  
