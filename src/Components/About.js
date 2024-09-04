@@ -39,7 +39,7 @@ const About = () => {
             <div className="font-bold text-3xl text-amber-400">
               I am into WebDev
             </div>
-            <p className="text-white text-base font-roboto mt-7 bg-white/20 p-4 rounded-lg shadow-md">
+            <p className="text-white text-base font-roboto mt-7 bg-purple-800/50 p-4 rounded-lg shadow-md">
               I am a Computer Science student at NITK with a passion for coding
               and problem-solving. I enjoy learning new technologies and
               tackling challenging projects in web development and programming.
