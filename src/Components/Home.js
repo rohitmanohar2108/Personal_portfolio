@@ -153,7 +153,7 @@ const Home = () => {
             <button
               onClick={() => handleSectionChange("About")}
               className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
-                currentSection === "About" ? "text-amber-400" : "text-gray-300"
+                currentSection === "About" ? "text-amber-400" : "text-white"
               } hover:text-amber-400 font-roboto`}
             >
               About
@@ -161,7 +161,7 @@ const Home = () => {
             <button
               onClick={() => handleSectionChange("Resume")}
               className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
-                currentSection === "Resume" ? "text-amber-400" : "text-gray-300"
+                currentSection === "Resume" ? "text-amber-400" : "text-white"
               } hover:text-amber-400 font-roboto`}
             >
               Education
@@ -171,7 +171,7 @@ const Home = () => {
               className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
                 currentSection === "Portfolio"
                   ? "text-amber-400"
-                  : "text-gray-300"
+                  : "text-white"
               } hover:text-amber-400 font-roboto`}
             >
               Portfolio
@@ -179,7 +179,7 @@ const Home = () => {
             <button
               onClick={() => handleSectionChange("Blog")}
               className={`px-4 py-2 rounded-full  bg-purple-700/50 hover:bg-violet-900 text-base ${
-                currentSection === "Blog" ? "text-amber-400" : "text-gray-300"
+                currentSection === "Blog" ? "text-amber-400" : "text-white"
               } hover:text-amber-400 font-roboto`}
             >
               Blog
@@ -189,7 +189,7 @@ const Home = () => {
               className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-90  hover:bg-violet-900 text-base ${
                 currentSection === "Contact"
                   ? "text-amber-400"
-                  : "text-gray-300"
+                  : "text-white"
               } hover:text-amber-400 font-roboto`}
             >
               Contact
