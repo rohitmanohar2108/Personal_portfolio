@@ -85,19 +85,19 @@ const Portfolio = () => {
       <div className="flex space-x-4 mb-8">
         <button
           onClick={() => setActiveTab('All')}
-          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'All' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 transition-colors duration-300 font-roboto`}
+          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'All' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400  font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
         >
           All
         </button>
         <button
           onClick={() => setActiveTab('Web Development')}
-          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Development' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 transition-colors duration-300 font-roboto`}
+          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Development' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400  font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
         >
           Web Development
         </button>
         <button
           onClick={() => setActiveTab('Web Design')}
-          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Design' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400 transition-colors duration-300 font-roboto`}
+          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Design' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400  font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
         >
           Web Design
         </button>

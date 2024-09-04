@@ -42,7 +42,6 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-black flex p-6">
-      
       {/* Left Column */}
       <div
         className="w-1/4 p-6 rounded-lg flex flex-col items-center"
@@ -109,34 +108,33 @@ const Home = () => {
               <p className="text-white font-roboto text-sm">Surathkal, India</p>
             </div>
           </div>
-          
         </div>
         <div className="flex space-x-4 mt-4">
-            <a
-              href="https://www.linkedin.com/in/rohit-manohar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-300"
-            >
-              <FaLinkedin size={24} />
-            </a>
-            <a
-              href="https://www.instagram.com/rohit_manohar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-300"
-            >
-              <FaInstagram size={24} />
-            </a>
-            <a
-              href="https://twitter.com/rohit_manohar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-300"
-            >
-              <FaTwitter size={24} />
-            </a>
-          </div>
+          <a
+            href="https://www.linkedin.com/in/rohit-manohar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-300"
+          >
+            <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://www.instagram.com/rohit_manohar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-300"
+          >
+            <FaInstagram size={24} />
+          </a>
+          <a
+            href="https://twitter.com/rohit_manohar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-300"
+          >
+            <FaTwitter size={24} />
+          </a>
+        </div>
       </div>
 
       {/* Right Column */}
@@ -149,50 +147,49 @@ const Home = () => {
       >
         {/* Top-right Navigation */}
         <div className="absolute top-0 right-0 mt-4 mr-4">
-  <div className="flex space-x-4">
-    <button
-      onClick={() => handleSectionChange("About")}
-      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-        currentSection === "About" ? "text-amber-400" : "text-white"
-      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
-    >
-      About
-    </button>
-    <button
-      onClick={() => handleSectionChange("Resume")}
-      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-        currentSection === "Resume" ? "text-amber-400" : "text-white"
-      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
-    >
-      Education
-    </button>
-    <button
-      onClick={() => handleSectionChange("Portfolio")}
-      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-        currentSection === "Portfolio" ? "text-amber-400" : "text-white"
-      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
-    >
-      Portfolio
-    </button>
-    <button
-      onClick={() => handleSectionChange("Blog")}
-      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-        currentSection === "Blog" ? "text-amber-400" : "text-white"
-      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
-    >
-      Blog
-    </button>
-    <button
-      onClick={() => handleSectionChange("Contact")}
-      className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-        currentSection === "Contact" ? "text-amber-400" : "text-white"
-      } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
-    >
-      Contact
-    </button>
-  </div>
-</div>
-
+          <div className="flex space-x-4">
+            <button
+              onClick={() => handleSectionChange("About")}
+              className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+                currentSection === "About" ? "text-amber-400" : "text-white"
+              } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            >
+              About
+            </button>
+            <button
+              onClick={() => handleSectionChange("Resume")}
+              className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+                currentSection === "Resume" ? "text-amber-400" : "text-white"
+              } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            >
+              Education
+            </button>
+            <button
+              onClick={() => handleSectionChange("Portfolio")}
+              className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+                currentSection === "Portfolio" ? "text-amber-400" : "text-white"
+              } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            >
+              Portfolio
+            </button>
+            <button
+              onClick={() => handleSectionChange("Blog")}
+              className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+                currentSection === "Blog" ? "text-amber-400" : "text-white"
+              } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            >
+              Blog
+            </button>
+            <button
+              onClick={() => handleSectionChange("Contact")}
+              className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
+                currentSection === "Contact" ? "text-amber-400" : "text-white"
+              } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            >
+              Contact
+            </button>
+          </div>
+        </div>
 
         {/* Right Column Content */}
         {renderContent()}
