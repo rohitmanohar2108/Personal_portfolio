@@ -146,7 +146,7 @@ const Home = () => {
         }}
       >
         {/* Top-right Navigation */}
-        <div className="absolute top-0 right-0 mt-4 mr-4">
+        <div className="absolute top-0 right-0 mt-4 mr-4 nav-buttons-container">
           <div className="flex space-x-4">
             <button
               onClick={() => handleSectionChange("About")}
