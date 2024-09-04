@@ -51,7 +51,7 @@ const About = () => {
         </div>
       </div>
 
-      <div class="mockup mockup-macbook loaded opened ml-36 mb-8">
+      <div class="mockup mockup-macbook loaded opened ml-36 mt-9">
         <div class="part top">
           <img
             src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
@@ -84,12 +84,12 @@ const About = () => {
         </div>
       </div>
 
-      <h2 className="text-amber-400 text-4xl mt-4 font-extrabold font-acme">
+      <h2 className="text-amber-400 text-4xl mt-9 font-extrabold font-acme">
         What I'm Doing
       </h2>
 
       {/* Skill Boxes Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         {/* Box 1: Web Design */}
         <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-acme group overflow-hidden">
           <div
