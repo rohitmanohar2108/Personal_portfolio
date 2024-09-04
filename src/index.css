@@ -60,7 +60,7 @@
   
   .behind-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
   
   .text-overlay {
@@ -73,6 +73,7 @@
     font-size: 5rem; /* Adjust font size as needed */
     text-align: center;
     font-family: 'Acme', sans-serif; /* Ensure you have the Acme font loaded */
+    margin-top: 20px;
   }
   
   /* Ensure the mockup is on top */
@@ -91,6 +92,7 @@
     perspective-origin: 50% 100%;
     opacity: 0;
     transition: 500ms opacity;
+    
   }
   
   .mockup.loaded {
@@ -145,11 +147,13 @@
     position: absolute;
     top: 8%;
     left: 4%;
-    width: 500%;
+    width: 92%;
+    height: auto; /* Ensure the height is set correctly */
     border-radius: 6px;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 1px);
   }
+  
   
   .mockup .part.bottom {
     position: absolute;
@@ -162,4 +166,29 @@
     transform-origin: 50% 0;
     transform: translate3d(0,0,0) rotateX(90deg);
   }
+  .mockup .part .screen-image {
+    display: block;
+    position: absolute;
+    top: 10px; /* Margin at the top */
+    left: 10px; /* Margin on the left */
+    right: 10px; /* Margin on the right */
+    bottom: 0; /* No margin at the bottom */
+    width: auto; /* Set to auto to maintain aspect ratio */
+    height: auto; /* Set to auto to maintain aspect ratio */
+    max-width: calc(100% - 20px); /* Ensure image does not exceed screen width minus margins */
+    max-height: 100%; /* Ensure image does not exceed screen height */
+    object-fit: cover; /* Ensure the image covers the area while preserving aspect ratio */
+    border-radius: 6px; /* Optional: rounded corners */
+    backface-visibility: hidden;
+    z-index: 1; /* Ensure it appears above other content */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 500ms;
+  }
+  
+  .mockup.opened .screen-image {
+    opacity: 1; /* Show image when screen is open */
+  }
+  
+  
+  
   

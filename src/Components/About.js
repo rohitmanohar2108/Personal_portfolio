@@ -6,7 +6,6 @@ import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
 
-
 const About = () => {
   useEffect(() => {
     // Animate the header and paragraphs
@@ -65,12 +64,11 @@ const About = () => {
             class="cover"
           />
 
-          <video autoplay>
-            <source
-              src=""
-              type="video/mp4"
-            />
-          </video>
+          <img
+            src="https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Laptop Screen"
+            class="screen-image"
+          />
         </div>
         <div class="part bottom">
           <img
