@@ -6,6 +6,7 @@ import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
 
+
 const About = () => {
   useEffect(() => {
     // Animate the header and paragraphs
@@ -33,64 +34,57 @@ const About = () => {
       <hr className="w-32 border-2 border-amber-400 mb-6 mt-3 rounded-full about-header" />
 
       <div class="behind-content">
-  <div class="text-overlay">
-    <div class="font-acme text-9xl mt-60">
-      Hi There!
-    </div>
-  </div>
-</div>
+        <div class="text-overlay">
+          <div class="font-acme text-9xl mt-96 text-violet-600">
+            Hi There!
+            <div className="font-bold text-3xl text-amber-400">
+              I am into WebDev
+            </div>
+            <p className="text-white text-base font-roboto mt-7 bg-white/20 p-4 rounded-lg shadow-md">
+              I am a Computer Science student at NITK with a passion for coding
+              and problem-solving. I enjoy learning new technologies and
+              tackling challenging projects in web development and programming.
+              Outside of coding, I explore tech trends and participate in
+              competitions. I'm eager to collaborate with others and contribute
+              to the tech community.
+            </p>
+          </div>
+        </div>
+      </div>
 
-<div class="mockup mockup-macbook loaded opened ml-36 mb-8">
-  <div class="part top">
-    <img
-      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
-      alt=""
-      class="top"
-    />
-    <img
-      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
-      alt=""
-      class="cover"
-    />
+      <div class="mockup mockup-macbook loaded opened ml-36 mb-8">
+        <div class="part top">
+          <img
+            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
+            alt=""
+            class="top"
+          />
+          <img
+            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+            alt=""
+            class="cover"
+          />
 
-    <video autoplay>
-      <source
-        src="https://d1xm195wioio0k.cloudfront.net/images/video/support.mp4"
-        type="video/mp4"
-      />
-    </video>
-  </div>
-  <div class="part bottom">
-    <img
-      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
-      alt=""
-      class="cover"
-    />
-    <img
-      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg"
-      alt=""
-      class="bottom"
-    />
-  </div>
-</div>
-
-
-      <p className="text-white text-base font-roboto">
-        I am a Computer Science Student at NITK. I have a deep passion for
-        coding and constantly strive to enhance my skills by learning new
-        technologies. I love tackling challenging problems and finding
-        innovative solutions. My areas of interest include web development,
-        programming, and many more. I am always eager to collaborate on exciting
-        projects and learn from others in the field.
-      </p>
-
-      <p className="text-white text-base mt-4 font-roboto">
-        When I am not coding, I enjoy exploring the latest tech trends and
-        participating in coding competitions. Let's connect and create something
-        amazing together! Whether it's building a new app, diving into a complex
-        algorithm, or simply exchanging knowledge, I am excited to engage with
-        like-minded individuals and contribute to the tech community.
-      </p>
+          <video autoplay>
+            <source
+              src=""
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="part bottom">
+          <img
+            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+            alt=""
+            class="cover"
+          />
+          <img
+            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg"
+            alt=""
+            class="bottom"
+          />
+        </div>
+      </div>
 
       <h2 className="text-amber-400 text-4xl mt-4 font-extrabold font-acme">
         What I'm Doing
