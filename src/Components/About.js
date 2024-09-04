@@ -65,7 +65,7 @@ const About = () => {
           />
 
           <img
-            src="https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src=""
             alt="Laptop Screen"
             class="screen-image"
           />
