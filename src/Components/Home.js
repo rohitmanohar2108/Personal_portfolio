@@ -52,16 +52,16 @@ const Home = () => {
       >
         {/* Profile Photo */}
         <img
-          src="https://media-sin6-3.cdn.whatsapp.net/v/t61.24694-24/453603651_520834290411384_6429731950094255849_n.jpg?ccb=11-4&oh=01_Q5AaILKhYIrPaCdMCVYP6V67v8Jv_qHL0yDjTv0_d5FyyYvu&oe=66E4347F&_nc_sid=5e03e0&_nc_cat=102" // Replace with your actual profile photo URL
+          src="https://media-sin6-3.cdn.whatsapp.net/v/t61.24694-24/417683727_26749646041318020_342537844971168030_n.jpg?ccb=11-4&oh=01_Q5AaIKvDV1_a3-YCp6IjKcw_PLZ6PsaXYOAOHUIUsAUHDV7C&oe=66E66E00&_nc_sid=5e03e0&_nc_cat=100" // Replace with your actual profile photo URL
           alt="Profile"
-          className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-purple-700"
+          className="w-60 h-60 object-cover mb-4 rounded-full border-double border-4 border-gray-400"
         />
 
         <h2 className="text-white text-3xl mb-2 font-acme">Rohit Manohar</h2>
         <div className="bg-black/30 hover:bg-violet-900 text-white text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-400 font-roboto">
           Aspiring Computer Engineer
         </div>
-        <div className="bg-purple-700/50 hover:bg-violet-900 text-white cursor-pointer text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-400 font-acme shadow-md shadow-purple-400 transition-transform transform hover:scale-105">
+        <div className="bg-purple-700/50 hover:bg-violet-900 text-white cursor-pointer text-sm px-4 py-2 rounded-lg mb-4 hover:text-amber-400 font-acme shadow-md shadow-gray-400 transition-transform transform hover:scale-105">
           <a href="#" target="_blank" rel="noopener noreferrer" className="">
             View Resume
           </a>
