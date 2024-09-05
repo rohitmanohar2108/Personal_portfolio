@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { FaCode, FaPaintBrush, FaCogs, FaLaptopCode } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
@@ -7,6 +7,7 @@ import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
 
 const About = () => {
+  const lettersRef = useRef([]);
   useEffect(() => {
     // Animate the header and paragraphs
     gsap.fromTo(
@@ -22,6 +23,22 @@ const About = () => {
       { opacity: 1, y: 0, duration: 1, delay: 0.5, stagger: 0.2 }
     );
   }, []);
+  useEffect(() => {
+    lettersRef.current = lettersRef.current.slice(0, "Hi There!".length);
+
+    // GSAP animation for staggered letter appearance
+    gsap.fromTo(
+      lettersRef.current,
+      { opacity: 0, y: 50 }, // Start state
+      {
+        opacity: 1,           // End state
+        y: 0,                 // Bring back to its original position
+        stagger: 0.1,         // Delay between each letter's animation
+        ease: "power3.out",
+        duration: 0.5,        // Animation duration per letter
+      }
+    );
+  }, []);
 
   return (
     <div>
@@ -32,24 +49,34 @@ const About = () => {
 
       <hr className="w-32 border-2 border-amber-400 mb-6 mt-3 rounded-full about-header" />
 
-      <div class="behind-content">
-        <div class="text-overlay">
-          <div class="font-acme text-9xl mt-96 text-violet-600">
-            Hi There!
-            <div className="font-bold text-3xl text-amber-400">
-              I am into WebDev
-            </div>
-            <p className="text-white text-base font-roboto mt-7 bg-purple-800/50 p-4 rounded-lg shadow-md">
-              I am a Computer Science student at NITK with a passion for coding
-              and problem-solving. I enjoy learning new technologies and
-              tackling challenging projects in web development and programming.
-              Outside of coding, I explore tech trends and participate in
-              competitions. I'm eager to collaborate with others and contribute
-              to the tech community.
-            </p>
+      <div className="behind-content">
+      <div className="text-overlay">
+        <div className="font-acme text-9xl mt-96 text-violet-600">
+          <div>
+            {"Hi There!".split("").map((char, index) => (
+              <span
+                key={index}
+                ref={(el) => (lettersRef.current[index] = el)}
+                className="inline-block" // inline-block prevents line breaks
+              >
+                {char === " " ? "\u00A0" : char} {/* Non-breaking space for spaces */}
+              </span>
+            ))}
           </div>
+          <div className="font-bold text-3xl text-amber-400">
+            I am into WebDev
+          </div>
+          <p className="text-white text-base font-roboto mt-7 bg-purple-800/50 p-4 rounded-lg shadow-md">
+            I am a Computer Science student at NITK with a passion for coding
+            and problem-solving. I enjoy learning new technologies and tackling
+            challenging projects in web development and programming. Outside of
+            coding, I explore tech trends and participate in competitions. I'm
+            eager to collaborate with others and contribute to the tech
+            community.
+          </p>
         </div>
       </div>
+    </div>
 
       <div class="mockup mockup-macbook loaded opened ml-36 mt-9">
         <div class="part top">
