@@ -27,22 +27,25 @@ const About = () => {
     );
   }, []);
   useEffect(() => {
+    // Ensure lettersRef is correctly populated
     lettersRef.current = lettersRef.current.slice(0, "Hi There!".length);
 
     // GSAP animation with ScrollTrigger
     gsap.fromTo(
       lettersRef.current,
-      { opacity: 0, y: 50 }, // Start state
+      { opacity: 0, y: 50 }, // Start state (hidden, moved down)
       {
-        opacity: 1,           // End state
-        y: 0,                 // Bring back to its original position
-        stagger: 0.1,         // Delay between each letter's animation
-        ease: "power3.out",
-        duration: 0.5,        // Animation duration per letter
+        opacity: 1,           // End state (fully visible)
+        y: 0,                 // Reset to original position
+        stagger: 0.1,         // Stagger animation for each letter
+        ease: "power3.out",   // Smooth easing
+        duration: 0.5,        // Duration per letter
         scrollTrigger: {
-          trigger: lettersRef.current, // Trigger the animation when the letters are in view
-          start: "top 80%",   // Trigger when the top of the element hits 80% of the viewport
-          toggleActions: "restart none none none", // Reanimate when scrolling back
+          trigger: lettersRef.current,  // Trigger when letters come into view
+          start: "top 100%",            // Start animation when the top of the element hits 100% of the viewport
+          end: "top 50%",               // End when the top of the element reaches 50% of the viewport
+          scrub: false,                 // Animate only when scrolled into view
+          toggleActions: "restart none none reset", // Restart on scroll back up
         },
       }
     );
