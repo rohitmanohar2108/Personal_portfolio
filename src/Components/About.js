@@ -5,6 +5,9 @@ import { FcAbout } from "react-icons/fc";
 import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const lettersRef = useRef([]);
@@ -26,7 +29,7 @@ const About = () => {
   useEffect(() => {
     lettersRef.current = lettersRef.current.slice(0, "Hi There!".length);
 
-    // GSAP animation for staggered letter appearance
+    // GSAP animation with ScrollTrigger
     gsap.fromTo(
       lettersRef.current,
       { opacity: 0, y: 50 }, // Start state
@@ -36,6 +39,11 @@ const About = () => {
         stagger: 0.1,         // Delay between each letter's animation
         ease: "power3.out",
         duration: 0.5,        // Animation duration per letter
+        scrollTrigger: {
+          trigger: lettersRef.current, // Trigger the animation when the letters are in view
+          start: "top 80%",   // Trigger when the top of the element hits 80% of the viewport
+          toggleActions: "restart none none none", // Reanimate when scrolling back
+        },
       }
     );
   }, []);
