@@ -7,8 +7,6 @@ import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
@@ -56,9 +54,7 @@ const About = () => {
   return (
     <div>
       <div className="flex items-center -my-4">
-        <h1 className="text-white text-3xl font-acme about-header">
-          About Me
-        </h1>
+        <h1 className="text-white text-3xl font-acme about-header">About Me</h1>
         <FcAbout className="text-4xl ml-4 text-white" />
       </div>
 
@@ -80,64 +76,76 @@ const About = () => {
             <div className="font-bold text-3xl text-amber-400">
               I am into WebDev
             </div>
-            <p className="text-white text-base font-roboto mt-7 bg-purple-800/50 p-4 rounded-lg shadow-md">
-              I am a Computer Science student at NITK with a passion for coding
-              and problem-solving. I enjoy learning new technologies and
-              tackling challenging projects in web development and programming.
-              Outside of coding, I explore tech trends and participate in
-              competitions. I'm eager to collaborate with others and contribute
-              to the tech community.
-            </p>
+            <div className="relative p-7 border border-zinc-800/65 hover:border-white rounded-lg shadow-lg backdrop-blur-md  bg-zinc-500 bg-opacity-20 ">
+              <p className="text-white text-base font-roboto mt bg-zinc-900 p-6 rounded-lg shadow-md">
+                I am a Computer Science student at NITK with a passion for
+                coding and problem-solving. I enjoy learning new technologies
+                and tackling challenging projects in web development and
+                programming. Outside of coding, I explore tech trends and
+                participate in competitions. I'm eager to collaborate with
+                others and contribute to the tech community.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="mockup mockup-macbook loaded opened ml-80 mt-9 relative">
-  <div class="part top">
-    <img
-      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
-      alt=""
-      class="top"
-    />
-    <img
-      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
-      alt=""
-      class="cover"
-    />
+        <div class="part top">
+          <img
+            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
+            alt=""
+            class="top"
+          />
+          <img
+            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+            alt=""
+            class="cover"
+          />
 
-    <img
-      src="https://media-sin6-2.cdn.whatsapp.net/v/t61.24694-24/458500118_798226432506822_8954841927037136570_n.jpg?ccb=11-4&oh=01_Q5AaIJSeLDitIHX5lt6NdcUpLySra9tMwov2c0-w5TWcD7ZU&oe=66EB033C&_nc_sid=5e03e0&_nc_cat=106"
-      alt="Laptop Screen"
-      class="screen-image"
-    />
-  </div>
-  <div class="part bottom">
-    <img
-      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
-      alt=""
-      class="cover"
-    />
-    <img
-      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg"
-      alt=""
-      class="bottom"
-    />
-  </div>
+          <img
+            src="https://media-sin6-2.cdn.whatsapp.net/v/t61.24694-24/458500118_798226432506822_8954841927037136570_n.jpg?ccb=11-4&oh=01_Q5AaIJSeLDitIHX5lt6NdcUpLySra9tMwov2c0-w5TWcD7ZU&oe=66EB033C&_nc_sid=5e03e0&_nc_cat=106"
+            alt="Laptop Screen"
+            class="screen-image"
+          />
+        </div>
+        <div class="part bottom">
+          <img
+            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+            alt=""
+            class="cover"
+          />
+          <img
+            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg"
+            alt=""
+            class="bottom"
+          />
+        </div>
 
-  
-  <div class="social-links justify-end">
-    <a href="https://github.com/rohitmanohar2108" target="_blank" aria-label="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/rohit-manohar-80b949207/" target="_blank" aria-label="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-  </div>
-</div>
-
+        <div class="social-links justify-end">
+          <a
+            href="https://github.com/rohitmanohar2108"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://twitter.com/yourusername"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rohit-manohar-80b949207/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
 
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold font-dm-sans">
@@ -159,9 +167,7 @@ const About = () => {
           <div className="absolute inset-0    bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaPaintBrush className="text-rose-600 text-5xl mb-3" />
-            <h3 className="text-white text-4xl mb-2">
-              Web Design
-            </h3>
+            <h3 className="text-white text-4xl mb-2">Web Design</h3>
             <p className="text-white font-bold">
               Creating visually appealing designs and user interfaces for
               websites. Expertise in UI/UX principles, responsive design, and
@@ -182,9 +188,7 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaLaptopCode className="text-rose-600 text-5xl mb-3" />
-            <h3 className="text-white text-4xl mb-2">
-              Web Development
-            </h3>
+            <h3 className="text-white text-4xl mb-2">Web Development</h3>
             <p className="text-white  font-bold">
               Building and maintaining websites using various technologies such
               as HTML, CSS, JavaScript, and frameworks like React. Focus on
@@ -205,9 +209,7 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
             <FaCode className="text-rose-600 text-5xl mb-3" />
-            <h3 className="text-white text-4xl mb-2 ">
-              Software Development
-            </h3>
+            <h3 className="text-white text-4xl mb-2 ">Software Development</h3>
             <p className="text-white font-bold">
               Developing software solutions with a focus on algorithms, data
               structures, and code optimization. Proficient in languages like
@@ -239,9 +241,7 @@ const About = () => {
       </div>
 
       <div className="mt-24 mb-12 text-center">
-        <h2 className="text-white text-5xl font-extrabold ">
-          My Skills
-        </h2>
+        <h2 className="text-white text-5xl font-extrabold ">My Skills</h2>
         <hr className="w-32 mx-auto border-2 border-white mt-3 rounded-full" />
       </div>
 
@@ -266,7 +266,6 @@ const About = () => {
           title="Front-End Development"
           description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
         />
-         
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         <HorizontalTechStack
