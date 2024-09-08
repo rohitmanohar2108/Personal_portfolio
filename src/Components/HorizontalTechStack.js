@@ -83,7 +83,7 @@ const HorizontalTechStack = ({
   }, [inView, percentage]);
 
   return (
-    <div className="mb-3 bg-black/30 p-4 rounded-lg shadow-md" ref={containerRef}>
+    <div className="mb-3 cursor-pointer border border-gray-500 hover:border-white bg-black/30 p-4 rounded-lg shadow-md" ref={containerRef}>
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center">
           {iconClass && (
@@ -101,7 +101,7 @@ const HorizontalTechStack = ({
           0%
         </span>
       </div>
-      <div className="relative w-full bg-white h-2 mt-4 rounded-lg overflow-hidden">
+      <div className="relative w-full bg-white h-2 rounded-lg overflow-hidden">
         <div
           className={`h-2 rounded-lg ${barColor}`}
           ref={barRef}
