@@ -5,7 +5,7 @@ const HorizontalTechStack = ({
   percentage = 50,
   title = "Tech Stack",
   description = "",
-  barColor = "bg-amber-400",
+  barColor = "bg-rose-600",
   iconClass = "", // Optional icon class
 }) => {
   const barRef = useRef(null);
@@ -89,7 +89,7 @@ const HorizontalTechStack = ({
           {iconClass && (
             <i className={`devicon ${iconClass} text-4xl mr-4`}></i> // Assuming you're using Devicon for icons
           )}
-          <h3 className="text-white text-3xl font-acme" ref={titleRef}>
+          <h3 className="text-rose-600 text-3xl font-dm-sans font-bold" ref={titleRef}>
             {title}
           </h3>
         </div>
@@ -108,7 +108,7 @@ const HorizontalTechStack = ({
           aria-label={`Progress bar showing ${percentage}%`}
         ></div>
       </div>
-      <p className="text-gray-400 text-sm mt-2 font-roboto" ref={descriptionRef}>
+      <p className="text-white text-sm mt-2 font-dm-sans font-xl font-bold" ref={descriptionRef}>
         {description}
       </p>
     </div>

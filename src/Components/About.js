@@ -89,7 +89,7 @@ const About = () => {
       </div>
     </div>
 
-      <div class="mockup mockup-macbook loaded opened ml-36 mt-9">
+      <div class="mockup mockup-macbook loaded opened ml-80 mt-9">
         <div class="part top">
           <img
             src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
@@ -127,9 +127,9 @@ const About = () => {
       </h2>
 
       {/* Skill Boxes Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 h-full w-full">
         {/* Box 1: Web Design */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-acme group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-acme group overflow-hidden ">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -137,7 +137,7 @@ const About = () => {
                 "url('https://www.exovia.de/wp-content/uploads/2021/04/was-ist-webdesign-einfuehrung.jpg')",
             }}
           ></div>
-          <div className="absolute inset-0  border-zinc-800  bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+          <div className="absolute inset-0 h-24 w-24 border-zinc-800  bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaPaintBrush className="text-amber-500 text-5xl mb-3" />
             <h3 className="text-white text-3xl mb-2 font-acme">Web Design</h3>
@@ -184,7 +184,7 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
             <FaCode className="text-amber-500 text-5xl mb-3" />
-            <h3 className="text-white text-3xl mb-2 font-acme">
+            <h3 className="text-red-600 text-3xl mb-2 font-acme">
               Software Development
             </h3>
             <p className="text-white text-sm font-roboto">

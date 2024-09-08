@@ -35,7 +35,7 @@ const CertificationBox = ({ logo, title, link }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative p-6 rounded-lg flex flex-col items-center text-center certification-box font-acme group overflow-hidden bg-white bg-opacity-30 "
+      className="relative p-6 rounded-lg flex flex-col items-center text-center certification-box font-acme group overflow-hidden bg-white bg-opacity-30 border border-zinc-800 hover:border-white "
       ref={boxRef}
     >
       <div className="relative w-full h-24 mb-4">
@@ -47,7 +47,7 @@ const CertificationBox = ({ logo, title, link }) => {
       </div>
 
       <div className="relative z-10 flex flex-col items-center opacity-100 transition-opacity duration-300">
-        <h3 className="text-white text-xl mb-2">{title}</h3>
+        <h3 className="text-white font-dm-sans font-bold text-2xl mb-2">{title}</h3>
       </div>
     </a>
   );

@@ -7,6 +7,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nano+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
 
 
 /* index.css */
@@ -27,7 +30,7 @@
   
   .circle {
     fill: none;
-    stroke: #FEBE10; /* Main progress color */
+    stroke: #e11d48; /* Main progress color */
     stroke-width: 10;
     stroke-dasharray: 314; /* Circumference value */
     stroke-dashoffset: 0;

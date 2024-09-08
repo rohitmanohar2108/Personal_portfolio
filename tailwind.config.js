@@ -10,6 +10,8 @@ module.exports = {
         'courier-prime': ['Courier Prime', 'monospace'],
         'acme': ['"Acme"', 'sans-serif'], // Added Acme font
         'roboto': ['"Roboto"', 'sans-serif'],
+        'serif': ['"Times New Roman"', 'serif'],
+        'dm-sans': ['"DM Sans"', 'sans-serif'],
       },
     },
   },
