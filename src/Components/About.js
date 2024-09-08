@@ -137,7 +137,7 @@ const About = () => {
                 "url('https://www.exovia.de/wp-content/uploads/2021/04/was-ist-webdesign-einfuehrung.jpg')",
             }}
           ></div>
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+          <div className="absolute inset-0  border-zinc-800  bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaPaintBrush className="text-amber-500 text-5xl mb-3" />
             <h3 className="text-white text-3xl mb-2 font-acme">Web Design</h3>

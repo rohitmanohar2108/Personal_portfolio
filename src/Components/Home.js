@@ -47,7 +47,7 @@ const Home = () => {
         className="w-1/4 p-6 rounded-lg flex flex-col items-center"
         style={{
           background:
-            "linear-gradient(45deg, rgba(106, 13, 173, 0.5), rgba(0, 0, 0, 0.5)), repeating-linear-gradient(135deg, rgba(106, 13, 173, 0.1) 0%, rgba(106, 13, 173, 0.1) 10%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 20%)",
+            "#121212"
         }}
       >
         {/* Profile Photo */}
@@ -142,7 +142,7 @@ const Home = () => {
         className="w-3/4 p-6 ml-6 rounded-lg relative"
         style={{
           background:
-            "linear-gradient(45deg, rgba(106, 13, 173, 0.5), rgba(0, 0, 0, 0.5)), repeating-linear-gradient(135deg, rgba(106, 13, 173, 0.1) 0%, rgba(106, 13, 173, 0.1) 10%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 20%)",
+            "#121212",
         }}
       >
         {/* Top-right Navigation */}

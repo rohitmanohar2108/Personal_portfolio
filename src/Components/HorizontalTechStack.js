@@ -83,7 +83,7 @@ const HorizontalTechStack = ({
   }, [inView, percentage]);
 
   return (
-    <div className="mb-3 cursor-pointer border border-gray-500 hover:border-white bg-black/30 p-4 rounded-lg shadow-md" ref={containerRef}>
+    <div className="mb-3 cursor-pointer border border-zinc-800 hover:border-white bg-zinc-900 p-4 rounded-lg shadow-md" ref={containerRef}>
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center">
           {iconClass && (
