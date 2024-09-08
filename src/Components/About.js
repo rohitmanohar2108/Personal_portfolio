@@ -6,7 +6,8 @@ import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Resume from "./Resume";
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,38 +92,52 @@ const About = () => {
         </div>
       </div>
 
-      <div class="mockup mockup-macbook loaded opened ml-80 mt-9">
-        <div class="part top">
-          <img
-            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
-            alt=""
-            class="top"
-          />
-          <img
-            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
-            alt=""
-            class="cover"
-          />
+      <div class="mockup mockup-macbook loaded opened ml-80 mt-9 relative">
+  <div class="part top">
+    <img
+      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
+      alt=""
+      class="top"
+    />
+    <img
+      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+      alt=""
+      class="cover"
+    />
 
-          <img
-            src="https://media-sin6-2.cdn.whatsapp.net/v/t61.24694-24/458500118_798226432506822_8954841927037136570_n.jpg?ccb=11-4&oh=01_Q5AaIJSeLDitIHX5lt6NdcUpLySra9tMwov2c0-w5TWcD7ZU&oe=66EB033C&_nc_sid=5e03e0&_nc_cat=106"
-            alt="Laptop Screen"
-            class="screen-image"
-          />
-        </div>
-        <div class="part bottom">
-          <img
-            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
-            alt=""
-            class="cover"
-          />
-          <img
-            src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg"
-            alt=""
-            class="bottom"
-          />
-        </div>
-      </div>
+    <img
+      src="https://media-sin6-2.cdn.whatsapp.net/v/t61.24694-24/458500118_798226432506822_8954841927037136570_n.jpg?ccb=11-4&oh=01_Q5AaIJSeLDitIHX5lt6NdcUpLySra9tMwov2c0-w5TWcD7ZU&oe=66EB033C&_nc_sid=5e03e0&_nc_cat=106"
+      alt="Laptop Screen"
+      class="screen-image"
+    />
+  </div>
+  <div class="part bottom">
+    <img
+      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+      alt=""
+      class="cover"
+    />
+    <img
+      src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg"
+      alt=""
+      class="bottom"
+    />
+  </div>
+
+  
+  <div class="social-links justify-end">
+    <a href="https://github.com/rohitmanohar2108" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/rohit-manohar-80b949207/" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+</div>
+
 
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold font-dm-sans">
