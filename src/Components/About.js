@@ -262,12 +262,12 @@ const About = () => {
         <HorizontalTechStack
           percentage={85}
           title="React"
-          description="Experienced in building responsive web applications with React."
+          description="Experienced in building responsive web."
         />
         <HorizontalTechStack
           percentage={85}
           title="TailwindCSS"
-          description="Experienced in building responsive web applications with TailwindCSS for modern, utility-first styling."
+          description="Experienced in building responsive web."
         />
         <HorizontalTechStack
           percentage={85}

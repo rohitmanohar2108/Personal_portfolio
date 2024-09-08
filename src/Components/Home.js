@@ -49,14 +49,14 @@ const Home = () => {
           background: `
             radial-gradient(circle at center, rgba(190, 24, 93, 0.4) 10%, rgba(18, 18, 18, 1) 30%),
             radial-gradient(circle at center, rgba(255, 105, 180, 0.5) 10%, rgba(18, 18, 18, 1) 30%)`,
-          backgroundSize: '100% 0%, 100% 90%',
+          backgroundSize: '100% 50%, 100% 90%',
         }}
       >
         {/* Top-right Navigation */}
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 -my-4 justify-end">
           <button
             onClick={() => handleSectionChange("About")}
-            className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white text-base ${
+            className={`px-4 py-2 rounded-full  bg-zinc-900 border border-zinc-800 hover:border-white text-base ${
               currentSection === "About" ? "text-rose-600" : "text-white"
             } hover:text-rose-600 font-dm-sans transition duration-300 ease-in-out transform hover:scale-105`}
           >

@@ -65,7 +65,6 @@ const HorizontalTechStack = ({
         ease: "power2.out",
       });
 
-      // Animate percentage text with GSAP and a custom function
       gsap.fromTo(
         percentageRef.current,
         { innerText: 0 },
@@ -74,7 +73,7 @@ const HorizontalTechStack = ({
           duration: 2,
           ease: "power2.out",
           snap: { innerText: 1 },
-          onUpdate: function() {
+          onUpdate: function () {
             this.targets()[0].innerText = `${Math.floor(this.targets()[0].innerText)}%`;
           },
         }
@@ -83,34 +82,39 @@ const HorizontalTechStack = ({
   }, [inView, percentage]);
 
   return (
-    <div className="mb-3 cursor-pointer border border-zinc-800 hover:border-white bg-zinc-900 p-4 rounded-lg shadow-md" ref={containerRef}>
-      <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center">
-          {iconClass && (
-            <i className={`devicon ${iconClass} text-4xl mr-4`}></i> // Assuming you're using Devicon for icons
-          )}
-          <h3 className="text-rose-600 text-3xl font-dm-sans font-bold" ref={titleRef}>
-            {title}
-          </h3>
+    <div className="relative p-7 border border-zinc-800 hover:border-white rounded-lg shadow-lg backdrop-blur-md  bg-zinc-500 bg-opacity-20 ">
+      <div
+        className="relative p-6 rounded-lg bg-zinc-900 bg-opacity-80"
+        ref={containerRef}
+      >
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center">
+            {iconClass && (
+              <i className={`devicon ${iconClass} text-4xl mr-4`}></i>
+            )}
+            <h3 className="text-rose-600 text-3xl font-dm-sans font-bold" ref={titleRef}>
+              {title}
+            </h3>
+          </div>
+          <span
+            className="text-white text-2xl font-bold"
+            ref={percentageRef}
+            aria-label={`Progress at ${percentage}%`}
+          >
+            0%
+          </span>
         </div>
-        <span
-          className="text-white text-2xl font-bold"
-          ref={percentageRef}
-          aria-label={`Progress at ${percentage}%`}
-        >
-          0%
-        </span>
+        <div className="relative w-full bg-white h-2 rounded-lg overflow-hidden">
+          <div
+            className={`h-2 rounded-lg ${barColor}`}
+            ref={barRef}
+            aria-label={`Progress bar showing ${percentage}%`}
+          ></div>
+        </div>
+        <p className="text-white text-sm mt-2 font-dm-sans font-xl font-bold" ref={descriptionRef}>
+          {description}
+        </p>
       </div>
-      <div className="relative w-full bg-white h-2 rounded-lg overflow-hidden">
-        <div
-          className={`h-2 rounded-lg ${barColor}`}
-          ref={barRef}
-          aria-label={`Progress bar showing ${percentage}%`}
-        ></div>
-      </div>
-      <p className="text-white text-sm mt-2 font-dm-sans font-xl font-bold" ref={descriptionRef}>
-        {description}
-      </p>
     </div>
   );
 };
