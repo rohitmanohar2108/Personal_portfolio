@@ -62,7 +62,7 @@ const About = () => {
 
       <div className="behind-content">
       <div className="text-overlay">
-        <div className="font-acme text-9xl mt-96 text-violet-600">
+        <div className="font-dm-sans font-bold text-9xl mt-96 text-rose-600">
           <div>
             {"Hi There!".split("").map((char, index) => (
               <span
