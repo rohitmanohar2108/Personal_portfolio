@@ -105,7 +105,7 @@ const About = () => {
           />
 
           <img
-            src="https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_5XySWqeTsJYccXgiU6pbTXmjkpih%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_69W1g56UQ3afqs1J92SU1Cogwcak"
+            src="https://media-sin6-2.cdn.whatsapp.net/v/t61.24694-24/458500118_798226432506822_8954841927037136570_n.jpg?ccb=11-4&oh=01_Q5AaIJSeLDitIHX5lt6NdcUpLySra9tMwov2c0-w5TWcD7ZU&oe=66EB033C&_nc_sid=5e03e0&_nc_cat=106"
             alt="Laptop Screen"
             class="screen-image"
           />
@@ -251,6 +251,7 @@ const About = () => {
           title="Front-End Development"
           description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
         />
+         
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         <HorizontalTechStack
