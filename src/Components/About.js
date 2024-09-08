@@ -54,7 +54,7 @@ const About = () => {
   return (
     <div>
       <div className="flex items-center -my-4">
-        <h1 className="text-white text-3xl font-acme about-header">About Me</h1>
+        <h1 className="text-white text-3xl font-dm-sans about-header">About Me</h1>
         <FcAbout className="text-4xl ml-4 text-white" />
       </div>
 
