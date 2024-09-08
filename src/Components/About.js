@@ -6,6 +6,7 @@ import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Resume from "./Resume";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -123,9 +124,10 @@ const About = () => {
         </div>
       </div>
 
+     
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold font-dm-sans">
-          Certifications
+          What i'm doing
         </h2>
         <hr className="w-32 mx-auto border-2 border-white mt-3 rounded-full" />
       </div>
@@ -251,7 +253,7 @@ const About = () => {
           description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         <HorizontalTechStack
           percentage={50}
           title="JavaScript"
