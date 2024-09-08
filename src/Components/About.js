@@ -54,12 +54,12 @@ const About = () => {
 
   return (
     <div>
-      <div className="flex items-center">
-        <h1 className="text-white text-3xl font-acme about-header">About Me</h1>
+      <div className="flex items-center -my-4">
+        <h1 className="text-white text-3xl font-acme about-header">
+          About Me
+        </h1>
         <FcAbout className="text-4xl ml-4 text-white" />
       </div>
-
-      <hr className="w-32 border-2 border-amber-400 mb-6 mt-3 rounded-full about-header" />
 
       <div className="behind-content">
         <div className="text-overlay">
@@ -124,7 +124,6 @@ const About = () => {
         </div>
       </div>
 
-     
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold font-dm-sans">
           What i'm doing

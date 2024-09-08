@@ -53,44 +53,45 @@ const Home = () => {
         }}
       >
         {/* Top-right Navigation */}
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-6">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 -my-4 justify-end">
           <button
             onClick={() => handleSectionChange("About")}
-            className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-              currentSection === "About" ? "text-amber-400" : "text-white"
-            } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white text-base ${
+              currentSection === "About" ? "text-rose-600" : "text-white"
+            } hover:text-rose-600 font-dm-sans transition duration-300 ease-in-out transform hover:scale-105`}
           >
             About
           </button>
           <button
             onClick={() => handleSectionChange("Resume")}
-            className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-              currentSection === "Resume" ? "text-amber-400" : "text-white"
-            } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white text-base ${
+              currentSection === "Resume" ? "text-rose-600" : "text-white"
+            } hover:text-rose-600 font-dm-sans transition duration-300 ease-in-out transform hover:scale-105 `}
           >
-            Education
+            Resume
           </button>
           <button
             onClick={() => handleSectionChange("Portfolio")}
-            className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-              currentSection === "Portfolio" ? "text-amber-400" : "text-white"
-            } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white text-base ${
+              currentSection === "Portfolio" ? "text-rose-600" : "text-white"
+            } hover:text-rose-600 font-dm-sans transition duration-300 ease-in-out transform hover:scale-105`}
           >
             Portfolio
           </button>
           <button
             onClick={() => handleSectionChange("Blog")}
-            className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-              currentSection === "Blog" ? "text-amber-400" : "text-white"
-            } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white text-base ${
+              currentSection === "Blog" ? "text-rose-600" : "text-white"
+            } hover:text-rose-600 font-dm-sans transition duration-300 ease-in-out transform hover:scale-105`}
           >
             Blog
           </button>
+          
           <button
             onClick={() => handleSectionChange("Contact")}
-            className={`px-4 py-2 rounded-full bg-purple-700/50 hover:bg-violet-900 text-base ${
-              currentSection === "Contact" ? "text-amber-400" : "text-white"
-            } hover:text-amber-400 font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+            className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white text-base ${
+              currentSection === "Contact" ? "text-rose-600" : "text-white"
+            } hover:text-rose-600 font-dm-sans transition duration-300 ease-in-out transform hover:scale-105`}
           >
             Contact
           </button>
