@@ -162,7 +162,7 @@ const About = () => {
         <hr className="w-32 mx-auto border-2 border-white mt-3 rounded-full" />
       </div>
       {/* Skill Boxes Section */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 h-full w-full font-dm-sans">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 h-full w-full font-dm-sans ">
         {/* Box 1: Web Design */}
         <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box group overflow-hidden border border-transparent hover:border-white transition-colors duration-300">
           <div
@@ -274,6 +274,7 @@ const About = () => {
           title="Front-End Development"
           description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
         />
+        
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         <HorizontalTechStack
@@ -330,6 +331,7 @@ const About = () => {
           title="Web Development"
           link="https://example.com/link-to-certification-4"
         />
+        
       </div>
     </div>
   );
