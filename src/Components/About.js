@@ -216,7 +216,7 @@ const About = () => {
           </div>
         </div>
 
-        <p className="text-amber-400 text-4xl mt-4 font-extrabold font-acme">
+        <p className="text-rose-600 text-4xl mt-4 font-extrabold font-dm-sans">
           My Skills
         </p>
       </div>

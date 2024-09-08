@@ -47,7 +47,7 @@ const Home = () => {
         className="w-full p-6 rounded-lg"
         style={{
           background: `
-            radial-gradient(circle at center, rgba(255, 105, 180, 0.5) 10%, rgba(18, 18, 18, 1) 30%),
+            radial-gradient(circle at center, rgba(190, 24, 93, 0.4) 10%, rgba(18, 18, 18, 1) 30%),
             radial-gradient(circle at center, rgba(255, 105, 180, 0.5) 10%, rgba(18, 18, 18, 1) 30%)`,
           backgroundSize: '100% 0%, 100% 90%',
         }}
