@@ -133,7 +133,7 @@ const About = () => {
       {/* Skill Boxes Section */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 h-full w-full font-dm-sans">
         {/* Box 1: Web Design */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-dm-sans group overflow-hidden ">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box  group overflow-hidden ">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -156,7 +156,7 @@ const About = () => {
         </div>
 
         {/* Box 2: Web Development */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-dm-sans group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box  group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -167,10 +167,10 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaLaptopCode className="text-rose-600 text-5xl mb-3" />
-            <h3 className="text-white text-4xl mb-2 font-dm-sans">
+            <h3 className="text-white text-4xl mb-2">
               Web Development
             </h3>
-            <p className="text-white font-dm-sans text-bold ">
+            <p className="text-white  font-bold">
               Building and maintaining websites using various technologies such
               as HTML, CSS, JavaScript, and frameworks like React. Focus on
               performance and scalability.
@@ -179,7 +179,7 @@ const About = () => {
         </div>
 
         {/* Box 3: Software Development */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-dm-sans group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box  group overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -190,10 +190,10 @@ const About = () => {
           <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
             <FaCode className="text-rose-600 text-5xl mb-3" />
-            <h3 className="text-white text-4xl mb-2 font-dm-sans">
+            <h3 className="text-white text-4xl mb-2 ">
               Software Development
             </h3>
-            <p className="text-white text-bold ">
+            <p className="text-white font-bold">
               Developing software solutions with a focus on algorithms, data
               structures, and code optimization. Proficient in languages like
               Java and C++.
@@ -214,7 +214,7 @@ const About = () => {
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaCogs className="text-rose-600 text-5xl mb-3" />
             <h3 className="text-white text-4xl mb-2 ">Front-End</h3>
-            <p className="text-white text-bold ">
+            <p className="text-white font-bold">
               Specializing in creating interactive and dynamic user interfaces.
               Experienced with frameworks such as React, ensuring a smooth and
               engaging user experience.
@@ -224,7 +224,7 @@ const About = () => {
       </div>
 
       <div className="mt-24 mb-12 text-center">
-        <h2 className="text-white text-5xl font-extrabold font-dm-sans">
+        <h2 className="text-white text-5xl font-extrabold ">
           My Skills
         </h2>
         <hr className="w-32 mx-auto border-2 border-white mt-3 rounded-full" />
