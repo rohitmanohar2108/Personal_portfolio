@@ -73,17 +73,18 @@ const About = () => {
                 </span>
               ))}
             </div>
-            <div className="font-bold text-3xl text-amber-400">
+            <div className="font-bold text-3xl text-amber-400 mb-3">
               I am into WebDev
             </div>
-            <div className="relative p-7 border border-zinc-800/65 hover:border-white rounded-lg shadow-lg backdrop-blur-md  bg-zinc-500 bg-opacity-20 ">
+            <div className="relative p-7 border border-zinc-800/65 hover:border-white rounded-lg shadow-lg backdrop-blur-md bg-zinc-500 bg-opacity-20">
               <p className="text-white text-base font-roboto mt bg-zinc-900 p-6 rounded-lg shadow-md">
-                I am a Computer Science student at NITK with a passion for
-                coding and problem-solving. I enjoy learning new technologies
-                and tackling challenging projects in web development and
-                programming. Outside of coding, I explore tech trends and
-                participate in competitions. I'm eager to collaborate with
-                others and contribute to the tech community.
+                I am a <span className="text-rose-600">Computer Science</span>{" "}
+                student at <span className="text-rose-600">NITK</span> with a
+                passion for coding and problem-solving. I enjoy learning new
+                technologies and tackling challenging projects in web
+                development and programming. Outside of coding, I explore tech
+                trends and participate in competitions.<span className="text-rose-600"> I'm eager to collaborate
+                with others </span>{" "}and contribute to the tech community.
               </p>
             </div>
           </div>
