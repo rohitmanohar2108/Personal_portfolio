@@ -54,7 +54,7 @@ const About = () => {
   return (
     <div>
       <div className="flex items-center -my-4">
-        <h1 className="text-white text-3xl font-dm-sans about-header">About Me</h1>
+        <h1 className="text-white text-3xl font-dm-sans about-header ">About Me</h1>
         <FcAbout className="text-4xl ml-4 text-white" />
       </div>
 
@@ -76,7 +76,7 @@ const About = () => {
             <div className="font-bold text-3xl text-amber-400 mb-3">
               I am into WebDev
             </div>
-            <div className="relative p-7 border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md bg-zinc-500 bg-opacity-20">
+            <div className="relative p-7 border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md bg-zinc-500 bg-opacity-20 mr-4">
               <p className="text-white text-base font-roboto mt bg-zinc-900 p-6 rounded-lg shadow-md">
                 I am a <span className="text-rose-600">Computer Science</span>{" "}
                 student at <span className="text-rose-600">NITK</span> with a
@@ -144,6 +144,13 @@ const About = () => {
             aria-label="LinkedIn"
           >
             <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/rvm_igg/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
           </a>
         </div>
       </div>
