@@ -37,7 +37,7 @@ const CertificationBox = ({ logo, title, link }) => {
       ref={boxRef}
     >
       {/* Outer box with a border and blur effect */}
-      <div className="relative p-6 rounded-lg bg-zinc-500 bg-opacity-20 backdrop-blur-md border border-zinc-800 hover:border-white">
+      <div className="relative p-6 rounded-lg bg-zinc-500 bg-opacity-20 backdrop-blur-md border border-transparent hover:border-white">
         {/* Inner box with a different background */}
         <div className="bg-gray-400 bg-opacity-30 py-14 px-10 rounded-lg transition-colors duration-300 relative">
           <div className="relative w-full h-24 mb-4">

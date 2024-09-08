@@ -76,7 +76,7 @@ const About = () => {
             <div className="font-bold text-3xl text-amber-400 mb-3">
               I am into WebDev
             </div>
-            <div className="relative p-7 border border-zinc-800/65 hover:border-white rounded-lg shadow-lg backdrop-blur-md bg-zinc-500 bg-opacity-20">
+            <div className="relative p-7 border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md bg-zinc-500 bg-opacity-20">
               <p className="text-white text-base font-roboto mt bg-zinc-900 p-6 rounded-lg shadow-md">
                 I am a <span className="text-rose-600">Computer Science</span>{" "}
                 student at <span className="text-rose-600">NITK</span> with a
@@ -157,7 +157,7 @@ const About = () => {
       {/* Skill Boxes Section */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 h-full w-full font-dm-sans">
         {/* Box 1: Web Design */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box  group overflow-hidden ">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box group overflow-hidden border border-transparent hover:border-white transition-colors duration-300">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -178,7 +178,7 @@ const About = () => {
         </div>
 
         {/* Box 2: Web Development */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box  group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box group overflow-hidden border border-transparent hover:border-white transition-colors duration-300">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -199,7 +199,7 @@ const About = () => {
         </div>
 
         {/* Box 3: Software Development */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box  group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box group overflow-hidden border border-transparent hover:border-white transition-colors duration-300">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
@@ -220,7 +220,7 @@ const About = () => {
         </div>
 
         {/* Box 4: Front-End */}
-        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box  group overflow-hidden">
+        <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box group overflow-hidden border border-transparent hover:border-white transition-colors duration-300">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-90"
             style={{
