@@ -315,12 +315,12 @@ const About = () => {
         />
         <CertificationBox
           logo="https://media.licdn.com/dms/image/v2/C4D0BAQFd9H6cxFC3wQ/company-logo_100_100/company-logo_100_100/0/1630549313166?e=1732147200&v=beta&t=lbbuC7_bSl16Rew1PlMvMKwtWRkGij7zkzxZYUNPHAo"
-          title="Namaste React"
+          title="Namaste React Javascript"
           link="https://example.com/link-to-certification-3"
         />
         <CertificationBox
           logo="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
-          title="Web Development Bootcamp"
+          title="Web Development"
           link="https://example.com/link-to-certification-4"
         />
       </div>
