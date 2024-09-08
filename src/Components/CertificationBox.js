@@ -32,24 +32,31 @@ const CertificationBox = ({ logo, title, link }) => {
 
   return (
     <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="relative p-6 rounded-lg flex flex-col items-center  text-center certification-box font-acme group overflow-hidden bg-white bg-opacity-30 border border-zinc-600 hover:border-white "
-      ref={boxRef}
-    >
-      <div className="relative w-full h-24 mb-4">
-        <img
-          src={logo}
-          alt={title}
-          className="absolute inset-0 w-full h-full object-contain object-center"
-        />
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative p-1 rounded-lg overflow-hidden group"
+    ref={boxRef}
+  >
+    {/* Outer box with a border and blur effect */}
+    <div className="relative p-6 rounded-lg bg-zinc-500 bg-opacity-20 backdrop-blur-md border-2 border-zinc-800 hover:border-white">
+      {/* Inner box with a different background */}
+      <div className="bg-gray-400 bg-opacity-30 p-4 rounded-lg  transition-colors duration-300">
+        <div className="relative w-full h-24 mb-4">
+          <img
+            src={logo}
+            alt={title}
+            className="absolute inset-0 w-full h-full object-contain object-center"
+          />
+        </div>
+        <div className="relative z-10 flex flex-col items-center opacity-100 transition-opacity duration-300">
+          <h3 className="text-white font-dm-sans font-bold text-2xl mb-2">
+            {title}
+          </h3>
+        </div>
       </div>
-
-      <div className="relative z-10 flex flex-col items-center opacity-100 transition-opacity duration-300">
-        <h3 className="text-white font-dm-sans font-bold text-2xl mb-2">{title}</h3>
-      </div>
-    </a>
+    </div>
+  </a>
   );
 };
 

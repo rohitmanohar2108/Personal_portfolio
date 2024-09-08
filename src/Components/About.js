@@ -131,7 +131,7 @@ const About = () => {
         <hr className="w-32 mx-auto border-2 border-white mt-3 rounded-full" />
       </div>
       {/* Skill Boxes Section */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 h-full w-full">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 h-full w-full font-dm-sans">
         {/* Box 1: Web Design */}
         <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box font-dm-sans group overflow-hidden ">
           <div
@@ -144,7 +144,7 @@ const About = () => {
           <div className="absolute inset-0    bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
           <div className="relative z-10 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FaPaintBrush className="text-rose-600 text-5xl mb-3" />
-            <h3 className="text-white text-4xl mb-2 font-dm-sans">
+            <h3 className="text-white text-4xl mb-2">
               Web Design
             </h3>
             <p className="text-white font-bold">
