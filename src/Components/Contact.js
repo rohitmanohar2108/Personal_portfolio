@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="mb-6">
         <h1 className="text-white text-3xl font-acme mb-4 -mt-6 -mx-3">Contact</h1>
         
-        <hr className="w-32 border-2 border-amber-400 -my-3 rounded-full -mx-3" />
+        
       </div>
 
       {/* Contact Information */}
