@@ -61,16 +61,19 @@ const About = () => {
       }
 
       // Set the stroke-dasharray values using JavaScript
-      document.querySelector('.triangle-svg polygon').style.strokeDasharray = '50';
+      document.querySelector(".triangle-svg polygon").style.strokeDasharray =
+        "50";
 
       // First timeout to change stroke-dasharray to '25'
       timeout1 = setTimeout(() => {
-        document.querySelector('.triangle-svg polygon').style.strokeDasharray = '25';
+        document.querySelector(".triangle-svg polygon").style.strokeDasharray =
+          "25";
       }, 1500);
 
       // Second timeout to change stroke-dasharray to '2'
       timeout2 = setTimeout(() => {
-        document.querySelector('.triangle-svg polygon').style.strokeDasharray = '2';
+        document.querySelector(".triangle-svg polygon").style.strokeDasharray =
+          "2";
         iter++;
         // Third timeout to recursively call the function
         timeout3 = setTimeout(() => {
@@ -89,7 +92,15 @@ const About = () => {
     };
   }, []);
 
-  
+  useEffect(() => {
+    // Show quote after some delay for demonstration
+    const timer = setTimeout(() => {
+      setQuoteVisible(true);
+    }, 1000); // Adjust the timing as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div>
       <div className="flex items-center -my-4">
@@ -293,19 +304,48 @@ const About = () => {
         </div>
       </div>
 
-      <div className="triangle-svg">
-        <svg width="450px" height="450px" viewBox="-4 -1 38 34">
-          <polygon fill="transparent" stroke="#56c5f9" strokeWidth="0.7" points="15, 0, 30, 30, 0, 30"></polygon>
-        </svg>
+      <div className="relative">
+        <div className="triangle-svg">
+          <svg width="450px" height="450px" viewBox="-4 -1 38 34">
+            {/* Downward-pointing triangle */}
+            <polygon
+              fill="transparent"
+              stroke="#e11d48"
+              strokeWidth="0.7"
+              points="0 15 30, 0 ,30,30"
+            ></polygon>
+          </svg>
+          <svg
+            width="450px"
+            height="450px"
+            viewBox="-4 -1 38 34"
+            className="transform rotate-180 mb-9"
+          >
+            {/* Downward-pointing triangle */}
+            <polygon
+              fill="transparent"
+              stroke="#e11d48"
+              strokeWidth="0.7"
+              points="0 15 30, 0 ,30,30"
+            ></polygon>
+          </svg>
+        </div>
+       
+          <div
+            className={`quote-container ${
+              isQuoteVisible ? "fade-in" : ""
+            } absolute inset-0 flex justify-center items-center mt-20`}
+          >
+            <blockquote className="text-3xl font-dm-sans font-bold  bg-zinc-900 p-6 border border-zinc-800 hover:border-white text-white text-center rounded-2xl mb-24 ">
+              "The only limit to our realization of tomorrow is our doubts of
+              today."
+              <footer className="mt-4 text-sm italic">
+                — Franklin D. Roosevelt
+              </footer>
+            </blockquote>
+          
+        </div>
       </div>
-
-      <div className={`quote-container ${isQuoteVisible ? 'fade-in' : ''}`}>
-        <blockquote>
-          "The only limit to our realization of tomorrow is our doubts of today."
-          <footer>— Franklin D. Roosevelt</footer>
-        </blockquote>
-      </div>
-
 
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold ">My Skills</h2>
