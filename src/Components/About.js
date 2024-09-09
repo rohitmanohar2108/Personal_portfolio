@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { FaCode, FaPaintBrush, FaCogs, FaLaptopCode } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const lettersRef = useRef([]);
+  const [isQuoteVisible, setQuoteVisible] = useState(false);
   useEffect(() => {
     // Animate the header and paragraphs
     gsap.fromTo(
@@ -51,6 +52,44 @@ const About = () => {
     );
   }, []);
 
+  useEffect(() => {
+    let timeout1, timeout2, timeout3;
+
+    const animateDashArr = (iter) => {
+      if (iter === 1) {
+        iter = 0;
+      }
+
+      // Set the stroke-dasharray values using JavaScript
+      document.querySelector('.triangle-svg polygon').style.strokeDasharray = '50';
+
+      // First timeout to change stroke-dasharray to '25'
+      timeout1 = setTimeout(() => {
+        document.querySelector('.triangle-svg polygon').style.strokeDasharray = '25';
+      }, 1500);
+
+      // Second timeout to change stroke-dasharray to '2'
+      timeout2 = setTimeout(() => {
+        document.querySelector('.triangle-svg polygon').style.strokeDasharray = '2';
+        iter++;
+        // Third timeout to recursively call the function
+        timeout3 = setTimeout(() => {
+          animateDashArr(1);
+        }, 1500);
+      }, 3000);
+    };
+
+    animateDashArr(0);
+
+    // Cleanup timeouts when the component unmounts to avoid memory leaks
+    return () => {
+      clearTimeout(timeout1);
+      clearTimeout(timeout2);
+      clearTimeout(timeout3);
+    };
+  }, []);
+
+  
   return (
     <div>
       <div className="flex items-center -my-4">
@@ -253,6 +292,20 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <div className="triangle-svg">
+        <svg width="450px" height="450px" viewBox="-4 -1 38 34">
+          <polygon fill="transparent" stroke="#56c5f9" strokeWidth="0.7" points="15, 0, 30, 30, 0, 30"></polygon>
+        </svg>
+      </div>
+
+      <div className={`quote-container ${isQuoteVisible ? 'fade-in' : ''}`}>
+        <blockquote>
+          "The only limit to our realization of tomorrow is our doubts of today."
+          <footer>— Franklin D. Roosevelt</footer>
+        </blockquote>
+      </div>
+
 
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold ">My Skills</h2>

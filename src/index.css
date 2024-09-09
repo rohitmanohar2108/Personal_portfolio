@@ -237,3 +237,76 @@
     right: 10px; /* Make sure icons adjust for smaller screens */
   }
 }
+
+body {
+  background: #000;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.triangle-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto; /* Centering and spacing for the triangle */
+  z-index: -1;
+}
+
+.triangle-svg svg {
+  filter: drop-shadow(0 0 8px #56c5f9);
+}
+
+.triangle-svg polygon {
+  animation: animate 1.5s linear infinite reverse;
+}
+
+@keyframes animate {
+  to {
+      stroke-dashoffset: 100;
+  }
+}
+
+.content {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+.page {
+  padding: 20px;
+}
+
+.quote-container {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  position: absolute;
+  top: 70%; /* Adjust as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1; /* Ensures the quote is above other elements */
+}
+
+.quote-container.fade-in {
+  opacity: 1;
+}
+
+blockquote {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+footer {
+  text-align: right;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.content {
+  position: relative;
+  z-index: 2; /* Ensures content is above the triangle and quote */
+  padding: 20px;
+}
