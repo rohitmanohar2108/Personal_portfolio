@@ -54,7 +54,9 @@ const About = () => {
   return (
     <div>
       <div className="flex items-center -my-4">
-        <h1 className="text-white text-3xl font-dm-sans about-header ">About Me</h1>
+        <h1 className="text-white text-3xl font-dm-sans about-header ">
+          About Me
+        </h1>
         <FcAbout className="text-4xl ml-4 text-white" />
       </div>
 
@@ -83,8 +85,12 @@ const About = () => {
                 passion for coding and problem-solving. I enjoy learning new
                 technologies and tackling challenging projects in web
                 development and programming. Outside of coding, I explore tech
-                trends and participate in competitions.<span className="text-rose-600"> I'm eager to collaborate
-                with others </span>{" "}and contribute to the tech community.
+                trends and participate in competitions.
+                <span className="text-rose-600">
+                  {" "}
+                  I'm eager to collaborate with others{" "}
+                </span>{" "}
+                and contribute to the tech community.
               </p>
             </div>
           </div>
@@ -274,9 +280,8 @@ const About = () => {
           title="Front-End Development"
           description="Specialized in creating responsive, dynamic, and interactive user interfaces using React and Tailwind-CSS."
         />
-        
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 content-center">
         <HorizontalTechStack
           percentage={50}
           title="JavaScript"
@@ -331,7 +336,6 @@ const About = () => {
           title="Web Development"
           link="https://example.com/link-to-certification-4"
         />
-        
       </div>
     </div>
   );

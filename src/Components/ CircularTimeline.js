@@ -95,7 +95,7 @@ const CircularTimeline = ({ percentage, title, description }) => {
   }, [inView, circumference, percentage]);
 
   return (
-    <div className="flex flex-col items-center cursor-pointer bg-zinc-900 border border-zinc-800 hover:border-white p-4 rounded-2xl shadow-lg transition-colors duration-300" ref={containerRef}>
+    <div className="flex flex-col items-center cursor-pointer bg-zinc-900 border border-zinc-800 hover:border-white p-7 rounded-xl shadow-lg transition-colors duration-300" ref={containerRef}>
       <div className="relative w-32 h-32">
         <svg width="120" height="120">
           <circle className="circle-bg" cx="60" cy="60" r={radius} />

@@ -82,7 +82,7 @@ const HorizontalTechStack = ({
   }, [inView, percentage]);
 
   return (
-    <div className="relative p-7 border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md  bg-zinc-500 bg-opacity-20 ">
+    <div className="relative p-5 border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md  bg-zinc-500 bg-opacity-20 ">
       <div
         className="relative p-6 rounded-lg bg-zinc-900 bg-opacity-80"
         ref={containerRef}
