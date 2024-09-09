@@ -12,21 +12,21 @@ const projects = {
     },
     {
       id: 2,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_4GDy3to6QsrfvvFw9WHJ44fXRpCd%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_69W1g56UQ3afqs1J92SU1Cogwcak',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_33ipk61D9T6AhM1YK67rmpvPzvjG%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_Hp88LwrD6GmyCpS3RttV5rbznXBX',
       title: 'Portfolio',
       description: 'Web Design',
       link: 'https://ro-portfolio-olive.vercel.app/'
     },
     {
       id: 3,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_EYKMtAYEXbrN9b2JxsWvaSKt2eD6%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_69W1g56UQ3afqs1J92SU1Cogwcak',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_EYKMtAYEXbrN9b2JxsWvaSKt2eD6%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_Hp88LwrD6GmyCpS3RttV5rbznXBX',
       title: 'NewScope',
       description: 'Web Dev',
       link: 'https://newscope.vercel.app/'
     },
     {
       id: 4,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_5XySWqeTsJYccXgiU6pbTXmjkpih%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_69W1g56UQ3afqs1J92SU1Cogwcak',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_HjSPgwA6Etfb94QkbfDfBHaj9oUe%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_Hp88LwrD6GmyCpS3RttV5rbznXBX',
       title: 'Personel portfolio',
       description: 'Web Dev',
       link: 'https://personal-portfolio-kappa-teal.vercel.app/'
@@ -42,7 +42,7 @@ const projects = {
     },
     {
       id: 2,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_EYKMtAYEXbrN9b2JxsWvaSKt2eD6%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_69W1g56UQ3afqs1J92SU1Cogwcak',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_EYKMtAYEXbrN9b2JxsWvaSKt2eD6%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_Hp88LwrD6GmyCpS3RttV5rbznXBX',
       title: 'NewScope',
       description: 'Web Dev ',
       link: 'https://newscope.vercel.app/'
@@ -52,14 +52,14 @@ const projects = {
   'Web Design': [
     {
       id: 1,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_4GDy3to6QsrfvvFw9WHJ44fXRpCd%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_69W1g56UQ3afqs1J92SU1Cogwcak',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_33ipk61D9T6AhM1YK67rmpvPzvjG%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_Hp88LwrD6GmyCpS3RttV5rbznXBX',
       title: 'Portfolio',
       description: ' Web Design',
       link: 'https://ro-portfolio-olive.vercel.app/'
     },
     {
       id: 1,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_5XySWqeTsJYccXgiU6pbTXmjkpih%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_69W1g56UQ3afqs1J92SU1Cogwcak',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_HjSPgwA6Etfb94QkbfDfBHaj9oUe%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_Hp88LwrD6GmyCpS3RttV5rbznXBX',
       title: 'Personel Portfolio',
       description: ' Web Design',
       link: 'https://personal-portfolio-kappa-teal.vercel.app/'
@@ -80,30 +80,30 @@ const Portfolio = () => {
 
   return (
     <div>
-      <h1 className="text-white text-3xl mb-4 font-acme">Portfolio</h1>
-      <hr className="w-32 border-2 border-amber-400 mb-6 -mx-2 -my-2 rounded-full" />
+      <h1 className="text-white text-3xl mb-4 font-dm-sans">Portfolio</h1>
+      
       <div className="flex space-x-4 mb-8">
         <button
           onClick={() => setActiveTab('All')}
-          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'All' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400  font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+          className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white ${activeTab === 'All' ? 'text-rose-600' : 'text-white'} hover:text-rose-600  font-dm-sans transition duration-300 ease-in-out transform hover:scale-105`}
         >
           All
         </button>
         <button
           onClick={() => setActiveTab('Web Development')}
-          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Development' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400  font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+          className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white ${activeTab === 'Web Development' ? 'text-rose-600' : 'text-gray-300'} hover:text-rose-600  font-dm-sans transition duration-300 ease-in-out transform hover:scale-105`}
         >
           Web Development
         </button>
         <button
           onClick={() => setActiveTab('Web Design')}
-          className={`px-4 py-2 rounded-full bg-black/30 ${activeTab === 'Web Design' ? 'text-amber-500' : 'text-gray-300'} hover:text-amber-400  font-roboto transition duration-300 ease-in-out transform hover:scale-105`}
+          className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white ${activeTab === 'Web Design' ? 'text-rose-600' : 'text-gray-300'} hover:text-rose-600  font-dm-sans transition duration-300 ease-in-out transform hover:scale-105`}
         >
           Web Design
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300 h-full p-5 py-5">
         {projects[activeTab].map(project => (
           <a
             key={project.id}
@@ -118,8 +118,8 @@ const Portfolio = () => {
               className="w-full h-48 object-cover"
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-              <h3 className="font-bold mb-2 text-3xl text-amber-400 font-acme">{project.title}</h3>
-              <p>{project.description}</p>
+              <h3 className="font-bold mb-2 text-3xl text-white font-dm-sans">{project.title}</h3>
+              <p className='font-bold font-dm-sans'>{project.description}</p>
             </div>
           </a>
         ))}
