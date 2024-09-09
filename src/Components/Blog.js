@@ -68,7 +68,7 @@ const Blog = () => {
           </li>
           <li className="mb-2">
             <a href="#" className="flex items-center hover:text-stone-400 text-sm">
-              <FaTag className="text-rose-600 text-lg mr-2" /> Technology Trends
+              <FaTag className="text-rose-600 text-lg mr-2" /> Technology Trends of
             </a>
           </li>
         </ul>
