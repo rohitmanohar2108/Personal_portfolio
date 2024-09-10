@@ -101,6 +101,9 @@ const About = () => {
     return () => clearTimeout(timer);
   }, []);
 
+ 
+  
+
   return (
     <div>
       <div className="flex items-center -my-4">
@@ -310,7 +313,7 @@ const About = () => {
             {/* Downward-pointing triangle */}
             <polygon
               fill="transparent"
-              stroke="#e11d48"
+              stroke="#ff0075"
               strokeWidth="0.7"
               points="0 15 30, 0 ,30,30"
             ></polygon>

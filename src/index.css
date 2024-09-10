@@ -251,11 +251,11 @@
 }
 
 .triangle-svg svg {
-  filter: drop-shadow(0 0 7px ) blur(40px);
+  filter: drop-shadow(0 0 7px ) blur(100px);
 }
 
 .triangle-svg polygon {
-  animation: animate 1.5s linear infinite reverse;
+  animation: animate 10s linear infinite reverse;
 }
 
 @keyframes animate {
