@@ -24,7 +24,7 @@ const CertificationBox = ({ logo, title, link }) => {
         scrollTrigger: {
           trigger: box,
           start: "top 80%", // Start when the top of the box reaches 80% of the viewport height
-          end: "top 50%",   // End when the top of the box reaches 50% of the viewport height
+          end: "top 50%", // End when the top of the box reaches 50% of the viewport height
           toggleActions: "play none none reverse", // Play the animation when entering, reverse when leaving
         },
       }
@@ -32,12 +32,10 @@ const CertificationBox = ({ logo, title, link }) => {
   }, []);
 
   return (
-    <div
-      className="relative p-1 rounded-lg overflow-hidden group"
-      ref={boxRef}
-    >
+    <div className="relative p-1 rounded-lg overflow-hidden group" ref={boxRef}>
       {/* Outer box with a border and blur effect */}
-      <div className="relative p-6 rounded-lg bg-zinc-500 bg-opacity-20 backdrop-blur-md border border-transparent hover:border-white">
+
+      <div className="relative p-6 rounded-lg bg-zinc-600 bg-opacity-20 backdrop-blur-md border border-transparent  hover:border-white">
         {/* Inner box with a different background */}
         <div className="bg-gray-400 bg-opacity-30 py-14 px-10 rounded-lg transition-colors duration-300 relative">
           <div className="relative w-full h-24 mb-4">
