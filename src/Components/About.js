@@ -125,7 +125,7 @@ const About = () => {
                 </span>
               ))}
             </div>
-            <div className="w-1/2 mx-44 font-bold rounded-full bg-gradient-to-r from-blue-600 via-violet-500 via-red-500 via-orange-500  to-yellow-500 p-[2px] mb-6 mt-3">
+            <div className="w-1/2 mx-44 font-bold rounded-full bg-gradient-to-r from-blue-600 via-violet-500 via-red-500 via-orange-500  to-yellow-500 p-[3px] mb-6 mt-3">
               <div className="bg-zinc-900 rounded-full text-3xl text-amber-400 py-2 px-4 ">
                 I am Rohit Manohar
               </div>
@@ -191,19 +191,21 @@ const About = () => {
             <i class="fab fa-github"></i>
           </a>
           <a
-            href="https://twitter.com/yourusername"
-            target="_blank"
-            aria-label="-Twitter"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
             href="https://www.linkedin.com/in/rohit-manohar-80b949207/"
             target="_blank"
             aria-label="-LinkedIn"
           >
             <i class="fab fa-linkedin"></i>
           </a>
+          
+          <a
+            href="https://x.com/imrohit372"
+            target="_blank"
+            aria-label="-Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          
           <a
             href="https://www.instagram.com/rvm_igg/"
             target="_blank"
