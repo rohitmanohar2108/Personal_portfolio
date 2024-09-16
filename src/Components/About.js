@@ -101,9 +101,6 @@ const About = () => {
     return () => clearTimeout(timer);
   }, []);
 
- 
-  
-
   return (
     <div>
       <div className="flex items-center -my-5 ">
@@ -339,9 +336,11 @@ const About = () => {
             isQuoteVisible ? "fade-in" : ""
           } absolute inset-0 flex justify-center items-center mt-20`}
         >
-          <blockquote className="text-4xl font-dm-sans font-bold  bg-zinc-900  p-6 border border-zinc-800 hover:border-white text-white text-center rounded-2xl mb-24 ">
-            "The only limit to our realization of tomorrow is our doubts of
-            today."
+          <blockquote className="text-4xl font-dm-sans font-bold bg-zinc-900 p-6 border border-zinc-800 hover:border-white text-center rounded-2xl mb-24">
+            <span className="bg-gradient-to-r from-violet-500  via-red-600 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
+              "The only limit to our realization of tomorrow is our doubts of
+              today."
+            </span>
             <footer className="mt-4 text-sm italic text-rose-600">
               — Franklin D. Roosevelt
             </footer>
