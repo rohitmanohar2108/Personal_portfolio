@@ -125,8 +125,8 @@ const About = () => {
                 </span>
               ))}
             </div>
-            <div className="w-1/2 mx-44 font-bold rounded-full bg-gradient-to-r from-blue-600 via-violet-500 via-red-500 via-orange-500 to-yellow-500 p-[2px] mb-6 mt-3">
-              <div className="bg-zinc-900 rounded-full text-3xl text-amber-400 py-2 px-4">
+            <div className="w-1/2 mx-44 font-bold rounded-full bg-gradient-to-r from-blue-600 via-violet-500 via-red-500 via-orange-500  to-yellow-500 p-[2px] mb-6 mt-3">
+              <div className="bg-zinc-900 rounded-full text-3xl text-amber-400 py-2 px-4 ">
                 I am Rohit Manohar
               </div>
             </div>
