@@ -49,7 +49,7 @@ const Home = () => {
           background: `
             radial-gradient(circle at center, rgba(190, 24, 93, 0.4) 10%, rgba(18, 18, 18, 1) 30%),
             radial-gradient(circle at center, rgba(255, 105, 180, 0.5) 10%, rgba(18, 18, 18, 1) 30%)`,
-          backgroundSize: "100% 50%, 100% 90%, 100% 70%",
+          backgroundSize: '100% 50%, 100% 90%, 100% 70%',
         }}
       >
         {/* Top-right Navigation */}
