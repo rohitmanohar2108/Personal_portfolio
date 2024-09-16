@@ -125,9 +125,12 @@ const About = () => {
                 </span>
               ))}
             </div>
-            <div className="font-bold text-3xl text-amber-400 mb-3">
-              I am into WebDev
+            <div className="w-1/2 mx-44 font-bold rounded-full bg-gradient-to-r from-blue-600 via-violet-500 via-red-500 via-orange-500 to-yellow-500 p-[2px] mb-6 mt-3">
+              <div className="bg-zinc-900 rounded-full text-3xl text-amber-400 py-2 px-4">
+                I am into WebDev
+              </div>
             </div>
+
             <div className="relative p-7 border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md bg-zinc-500 bg-opacity-20 mr-4">
               <p className="text-white text-base font-roboto italic mt bg-zinc-900  p-6 rounded-lg shadow-md">
                 I am a <span className="text-rose-600">Computer Science</span>{" "}
@@ -210,9 +213,6 @@ const About = () => {
           </a>
         </div>
       </div>
-
-     
-
 
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold font-dm-sans">
