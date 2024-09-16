@@ -211,6 +211,9 @@ const About = () => {
         </div>
       </div>
 
+     
+
+
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold font-dm-sans">
           What i'm doing <span className="text-rose-600">?</span>
