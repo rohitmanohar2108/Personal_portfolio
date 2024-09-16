@@ -216,12 +216,12 @@ const About = () => {
 
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold font-dm-sans">
-          What i'm doing
+          What i'm doing <span className="text-rose-600">?</span>
         </h2>
         <hr className="w-32 mx-auto border-2 border-white mt-3 rounded-full" />
       </div>
       {/* Skill Boxes Section */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 h-full w-full font-dm-sans ">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 h-full w-full font-dm-sans cursor-pointer">
         {/* Box 1: Web Design */}
         <div className="relative p-6 rounded-lg flex flex-col items-center text-center skill-box group overflow-hidden border border-transparent hover:border-white transition-colors duration-300">
           <div
@@ -339,7 +339,7 @@ const About = () => {
             isQuoteVisible ? "fade-in" : ""
           } absolute inset-0 flex justify-center items-center mt-20`}
         >
-          <blockquote className="text-4xl font-dm-sans font-bold  bg-zinc-900 p-6 border border-zinc-800 hover:border-white text-white text-center rounded-2xl mb-24 ">
+          <blockquote className="text-4xl font-dm-sans font-bold  bg-zinc-900  p-6 border border-zinc-800 hover:border-white text-white text-center rounded-2xl mb-24 ">
             "The only limit to our realization of tomorrow is our doubts of
             today."
             <footer className="mt-4 text-sm italic text-rose-600">
