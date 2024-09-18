@@ -47,10 +47,23 @@ const Home = () => {
         className="w-full p-6 rounded-lg"
         style={{
           background: `
-            radial-gradient(circle at center, rgba(190, 24, 93, 0.4) 10%, rgba(18, 18, 18, 1) 30%),
-            radial-gradient(circle at center, rgba(255, 105, 180, 0.5) 10%, rgba(18, 18, 18, 1) 30%)`,
-          backgroundSize: '100% 50%, 100% 90%, 100% 70%',
+            linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(21, 32, 43, 0.9) 100%),
+            url('https://www.transparenttextures.com/patterns/dark-mosaic.png')`,
+          backgroundBlendMode: 'overlay',
+          backgroundSize: 'cover',
+          color: 'white',
         }}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
       >
         {/* Top-right Navigation */}
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 -my-4 justify-end relative z-20">
