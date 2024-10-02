@@ -6,6 +6,8 @@ import CircularTimeline from "./ CircularTimeline";
 import CertificationBox from "./CertificationBox";
 import HorizontalTechStack from "./HorizontalTechStack";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Resume from "./Resume";
+import Portfolio from "./Portfolio";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -352,6 +354,13 @@ const About = () => {
           </blockquote>
         </div>
       </div>
+      <div className="mt-24 mb-12 text-center">
+        <h2 className="text-white text-5xl font-extrabold ">Education & Experience</h2>
+        <hr className="w-32 mx-auto border-2 border-white mt-3 rounded-full" />
+      </div>
+      <div>
+        <Resume />
+      </div>
 
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold ">My Skills</h2>
@@ -407,6 +416,13 @@ const About = () => {
           title="C++"
           description="Experienced in using C++."
         />
+      </div>
+      <div className="mt-24 mb-12 text-center">
+        <h2 className="text-white text-5xl font-extrabold ">Projects</h2>
+        <hr className="w-32 mx-auto border-2 border-white mt-3 rounded-full" />
+      </div>
+      <div>
+        <Portfolio />
       </div>
       <div className="mt-24 mb-12 text-center">
         <h2 className="text-white text-5xl font-extrabold font-dm-sans">

@@ -29,9 +29,7 @@ const Resume = () => {
   return (
     <div className="p-6 rounded-lg shadow-lg mt-14">
       {/* Header Section */}
-      <div className="mb-6 -mt-20 -mx-6 resume-header">
-        <h1 className="text-white text-3xl font-dm-sans">Resume</h1>
-      </div>
+      
 
       {/* Flex container for Education and Experience */}
       <div className="flex justify-between gap-8 cursor-pointer">
@@ -42,7 +40,7 @@ const Resume = () => {
           </h2>
           <div className="relative border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md p-6 bg-zinc-500 bg-opacity-20">
             <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-lg shadow-md">
-              <h3 className="text-3xl font-bold text-rose-600 mb-2 font-dm-sans">
+              <h3 className="text-2xl font-bold text-rose-600 mb-2 font-dm-sans">
                 National Institute of Technology Karnataka (NITK)
               </h3>
               <p className="text-white font-bold font-dm-sans">
@@ -56,7 +54,7 @@ const Resume = () => {
 
           <div className="relative border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md p-6 bg-zinc-500 bg-opacity-20 mt-14">
             <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-lg shadow-md">
-              <h3 className="text-3xl font-bold text-rose-600 mb-2 font-dm-sans">
+              <h3 className="text-2xl font-bold text-rose-600 mb-2 font-dm-sans">
                 Dharampeth M.P. Deo Memorial Science College, Nagpur, Maharashtra
               </h3>
               <p className="text-white font-bold font-dm-sans">
@@ -77,7 +75,7 @@ const Resume = () => {
           </h2>
           <div className="relative border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md p-6 bg-zinc-500 bg-opacity-20">
             <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-lg shadow-md">
-              <h3 className="text-3xl font-bold text-rose-600 mb-2 font-dm-sans">
+              <h3 className="text-2xl font-bold text-rose-600 mb-2 font-dm-sans">
                 TEDx NITK Surathkal Media Team
               </h3>
               <p className="text-white font-bold font-dm-sans">
@@ -94,7 +92,7 @@ const Resume = () => {
           </div>
           <div className="relative border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md p-6 bg-zinc-500 bg-opacity-20 mt-10">
             <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-lg shadow-md">
-              <h3 className="text-3xl font-bold text-rose-600 mb-2 font-dm-sans">
+              <h3 className="text-2xl font-bold text-rose-600 mb-2 font-dm-sans">
                 React Projects
               </h3>
               <p className="text-white font-bold font-dm-sans">

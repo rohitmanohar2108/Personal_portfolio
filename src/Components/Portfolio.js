@@ -12,7 +12,7 @@ const projects = {
     },
     {
       id: 2,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_33ipk61D9T6AhM1YK67rmpvPzvjG%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_2q5xmLHavNwyLXRhZZV9GC6pWhpd',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_33ipk61D9T6AhM1YK67rmpvPzvjG%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_J7U1tK6HyWhqP85jf6hbzXqbCUyS',
       title: 'Portfolio',
       description: 'Web Design',
       link: 'https://ro-portfolio-olive.vercel.app/'
@@ -20,7 +20,7 @@ const projects = {
     
     {
       id: 4,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_7Vf2Yu6pjUiVbHonAqNRZAqLqie3%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_2q5xmLHavNwyLXRhZZV9GC6pWhpd',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_6aZ9wP5gZaNDPNPYKNzpWWvDojWM%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_J7U1tK6HyWhqP85jf6hbzXqbCUyS',
       title: 'Personel portfolio',
       description: 'Web Dev',
       link: 'https://personal-portfolio-kappa-teal.vercel.app/'
@@ -40,14 +40,14 @@ const projects = {
   'Web Design': [
     {
       id: 1,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_33ipk61D9T6AhM1YK67rmpvPzvjG%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_2q5xmLHavNwyLXRhZZV9GC6pWhpd',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_33ipk61D9T6AhM1YK67rmpvPzvjG%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_J7U1tK6HyWhqP85jf6hbzXqbCUyS',
       title: 'Portfolio',
       description: ' Web Design',
       link: 'https://ro-portfolio-olive.vercel.app/'
     },
     {
       id: 1,
-      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_7Vf2Yu6pjUiVbHonAqNRZAqLqie3%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_2q5xmLHavNwyLXRhZZV9GC6pWhpd',
+      image: 'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_6aZ9wP5gZaNDPNPYKNzpWWvDojWM%26teamId%3Drohits-projects-1ff89b20%26withStatus%3D1&w=1920&q=75&dpl=dpl_J7U1tK6HyWhqP85jf6hbzXqbCUyS',
       title: 'Personel Portfolio',
       description: ' Web Design',
       link: 'https://personal-portfolio-kappa-teal.vercel.app/'
@@ -68,9 +68,9 @@ const Portfolio = () => {
 
   return (
     <div>
-      <h1 className="text-white text-3xl mb-4 font-dm-sans">Portfolio</h1>
       
-      <div className="flex space-x-4 mb-8">
+      
+      <div className="flex space-x-4 mb-8 ml-[500px]">
         <button
           onClick={() => setActiveTab('All')}
           className={`px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 hover:border-white ${activeTab === 'All' ? 'text-rose-600' : 'text-white'} hover:text-rose-600  font-dm-sans transition duration-300 ease-in-out transform hover:scale-105`}
@@ -98,7 +98,7 @@ const Portfolio = () => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative block bg-purple-800/50 rounded-lg overflow-hidden group project-card"
+            className="relative block bg-purple-800/50 rounded-sm overflow-hidden group project-card"
           >
             <img
               src={project.image}

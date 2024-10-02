@@ -82,9 +82,9 @@ const HorizontalTechStack = ({
   }, [inView, percentage]);
 
   return (
-    <div className="relative p-5 border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md  bg-zinc-500 bg-opacity-20 ">
+    <div className="relative p-5 border border-transparent hover:border-gray-200 rounded-lg shadow-lg backdrop-blur-md  bg-zinc-500 bg-opacity-20 hover:bg-gradient-to-br from-slate-500 via-gray-400 to-zinc-900 ">
       <div
-        className="relative p-6 rounded-lg bg-zinc-900 bg-opacity-80"
+        className="relative p-6 rounded-lg bg-zinc-900 bg-opacity-80 z-20"
         ref={containerRef}
       >
         <div className="flex items-center justify-between mb-2">
