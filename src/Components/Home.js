@@ -11,6 +11,7 @@ import {
 import About from "./About";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
+
 import Blog from "./Blog";
 import Contact from "./Contact";
 
@@ -54,7 +55,7 @@ const Home = () => {
       >
         {/* Top-right Navigation */}
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 -my-4 justify-end relative z-20">
-        <button
+          <button
             onClick={() => handleSectionChange("About")}
             className={`px-4 py-2 rounded-full  bg-zinc-900 border border-zinc-800 hover:border-white text-base ${
               currentSection === "About" ? "text-rose-600" : "text-white"

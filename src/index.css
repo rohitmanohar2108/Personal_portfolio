@@ -186,7 +186,7 @@
     left: 10px; /* Margin on the left */
     right: 10px; /* Margin on the right */
     bottom: 0; /* No margin at the bottom */
-    width: auto; /* Set to auto to maintain aspect ratio */
+    width: 600px; /* Set to auto to maintain aspect ratio */
     height: auto; /* Set to auto to maintain aspect ratio */
     max-width: calc(100% - 20px); /* Ensure image does not exceed screen width minus margins */
     max-height: 100%; /* Ensure image does not exceed screen height */
@@ -290,4 +290,46 @@
 }
 
 
+.shine-effect {
+  position: relative;
+  border-radius: inherit;
+  overflow: hidden; /* Ensures shine effect stays within outer border */
+}
 
+.shine-effect::before,
+.shine-effect::after {
+  content: "";
+  position: absolute;
+  width: 300%; /* Large enough to cover the entire div diagonally */
+  height: 5px; /* Line thickness */
+  background: #ffffff; /* Shine color */
+  left: -50%;
+  z-index: 1; /* Make sure the lines stay behind the content */
+  transform: rotate(45deg); /* Slant the line */
+  animation: slant-shine 3s linear infinite; /* Adjusted speed for simultaneous movement */
+}
+
+
+
+.shine-effect::after {
+  transform: rotate(-45deg); /* Opposite slant for the second line */
+  top: -1px; /* Move the second line closer by adjusting its vertical position */
+}
+
+
+.shine-effect p {
+  position: relative;
+  z-index: 2; /* Ensure the paragraph content is above the shine effect */
+}
+
+@keyframes slant-shine {
+  0% {
+    transform: translateX(-100%) rotate(45deg); /* Start off-screen */
+  }
+  50% {
+    transform: translateX(0) rotate(45deg); /* Center point */
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg); /* End off-screen */
+  }
+}

@@ -32,12 +32,12 @@ const CertificationBox = ({ logo, title, link }) => {
   }, []);
 
   return (
-    <div className="relative p-1 rounded-lg overflow-hidden group" ref={boxRef}>
+    <div className="relative p-1 rounded-lg overflow-hidden group " ref={boxRef}>
       {/* Outer box with a border and blur effect */}
 
-      <div className="relative p-6 rounded-lg bg-zinc-600 bg-opacity-20 backdrop-blur-md border border-transparent  hover:border-white">
+      <div className="relative p-6 rounded-lg bg-zinc-600 bg-opacity-20 backdrop-blur-md border border-transparent  hover:border-white shine-effect">
         {/* Inner box with a different background */}
-        <div className="bg-gray-400 bg-opacity-30 py-14 px-10 rounded-lg transition-colors duration-300 relative">
+        <div className="bg-zinc-700 bg-opacit py-14 px-10 rounded-lg transition-colors duration-300 relative z-50">
           <div className="relative w-full h-24 mb-4">
             <img
               src={logo}
@@ -55,7 +55,7 @@ const CertificationBox = ({ logo, title, link }) => {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute bottom-2 left-4 flex items-center border bg-gray-400 bg-opacity-30 text-white p-2 px-5 rounded-full transition-colors duration-300 z-20 ml-4 my-3"
+            className="absolute bottom-2 left-4 flex items-center border bg-gray-400 bg-opacity-30 text-white py-2 px-4 rounded-full transition-colors duration-300 z-20 ml-4 my-3"
           >
             <span className="mr-2">View</span>
             <FaArrowRight />

@@ -133,8 +133,9 @@ const About = () => {
               </div>
             </div>
 
-            <div className="relative p-7 border border-transparent hover:border-white rounded-lg shadow-lg backdrop-blur-md bg-zinc-500 bg-opacity-20 mr-4">
-              <p className="text-white text-base font-roboto italic mt bg-zinc-900  p-6 rounded-lg shadow-md">
+            <div className="relative p-7 border border-transparent rounded-xl hover:border-white  shadow-lg backdrop-blur-md bg-zinc-500 bg-opacity-20 mr-4 shine-effect ">
+             
+              <p className="text-white text-base font-roboto italic mt bg-zinc-900 p-6 rounded-lg shadow-md">
                 I am a <span className="text-rose-600">Computer Science</span>{" "}
                 student at <span className="text-rose-600">NITK</span> with a
                 passion for coding and problem-solving. I enjoy learning new
@@ -166,9 +167,10 @@ const About = () => {
           />
 
           <img
-            src="https://media-sin6-2.cdn.whatsapp.net/v/t61.24694-24/458500118_798226432506822_8954841927037136570_n.jpg?ccb=11-4&oh=01_Q5AaIJSeLDitIHX5lt6NdcUpLySra9tMwov2c0-w5TWcD7ZU&oe=66EB033C&_nc_sid=5e03e0&_nc_cat=106"
+            src="https://media.licdn.com/dms/image/v2/D5635AQHdDi6OfTqrwg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1725916584983?e=1728482400&v=beta&t=XLho3d4ExDDtVEp9YJ_UDOnzqlEoWeSzcViPUHQYM_A"
             alt="Laptop Screen"
-            class="screen-image"
+            class="screen-image "
+            
           />
         </div>
         <div class="part bottom">
@@ -199,7 +201,7 @@ const About = () => {
           >
             <i class="fab fa-linkedin"></i>
           </a>
-          
+
           <a
             href="https://x.com/imrohit372"
             target="_blank"
@@ -207,7 +209,7 @@ const About = () => {
           >
             <i class="fab fa-twitter"></i>
           </a>
-          
+
           <a
             href="https://www.instagram.com/rvm_igg/"
             target="_blank"
@@ -355,7 +357,9 @@ const About = () => {
         </div>
       </div>
       <div className="mt-24 mb-12 text-center">
-        <h2 className="text-white text-5xl font-extrabold ">Education & Experience</h2>
+        <h2 className="text-white text-5xl font-extrabold ">
+          Education & Experience
+        </h2>
         <hr className="w-32 mx-auto border-2 border-white mt-3 rounded-full" />
       </div>
       <div>
@@ -432,7 +436,7 @@ const About = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
         <CertificationBox
-          logo="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+          logo="https://freelogopng.com/images/all_img/1683006915udemy-logo-white.png"
           title="C++ Programming"
           link="https://example.com/link-to-certification-1"
         />
@@ -447,7 +451,7 @@ const About = () => {
           link="https://example.com/link-to-certification-3"
         />
         <CertificationBox
-          logo="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+          logo="https://freelogopng.com/images/all_img/1683006915udemy-logo-white.png"
           title="Web Development"
           link="https://example.com/link-to-certification-4"
         />
